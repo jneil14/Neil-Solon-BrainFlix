@@ -21,7 +21,7 @@ export default function Header() {
       {/* upload btn and user image */}
       <div className="user">
         <button className="user__upload-btn">+ UPLOAD</button>
-        <img className="user__image" src={userImage} />
+        <img className="user__image" src={userImage} alt="image" />
       </div>
     </div>
   );
