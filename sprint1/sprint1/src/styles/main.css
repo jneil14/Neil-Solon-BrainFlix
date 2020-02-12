@@ -276,6 +276,161 @@
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .video__info {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .video__info .video__title-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .video__info .video__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+  }
+  .video__info .video__data-subcontainer-one {
+    width: 12.5rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .video__info .video__data-subcontainer-one .video__data-channel {
+    width: 100%;
+    margin-right: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .video__info .video__data-subcontainer-one .video__data-date {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .video__info .video__data-views-likes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    width: 100%;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    margin-bottom: 1.5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .video__info {
+    margin-left: 11.25rem;
+    margin-right: 1.5rem;
+  }
+  .video__info .video__title-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .video__info .video__data {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+  }
+  .video__info .video__data-subcontainer-one {
+    width: 12.5rem;
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .video__info .video__data-subcontainer-one .video__data-channel {
+    width: 100%;
+    margin-right: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .video__info .video__data-subcontainer-one .video__data-date {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .video__info .video__data-views-likes {
+    display: inline;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    width: 100%;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    margin-bottom: 1.5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    width: 100%;
+  }
+}
+
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

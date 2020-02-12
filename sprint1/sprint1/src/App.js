@@ -37,12 +37,12 @@ function App() {
   };
 
 
-  const sideVideo = {
-    id: 'type of <string>',
-    title: 'type of <string>',
-    channel: 'type of <string>',
-    image: 'type of <string>'
-  };  
+//   const sideVideo = {
+//     id: 'type of <string>', 
+//     title: 'type of <string>', 
+//     channel: 'type of <string>', 
+//     image: 'type of <string>' 
+// };  
 
   return (
     <div>

@@ -13,28 +13,28 @@ export default function VideoInfo(props) {
       </div>
 
       <div className="video_data">
-        <div className="video__data-subcontainer">
+        <div className="video__data-subcontainer-one">
           <h3 className="video__data-channel">{videoInfo.channel}</h3>
-          <h3 className="video__data-date">{videoInfo.date}</h3>
+          <h3 className="video__data-date">{videoInfo.timestamp}</h3>
         </div>
 
         {/* views and likes container */}
         <div className="video__data-views-likes">
-          <div className="video__data-subcontainer">
+          <div className="video__data-subcontainer-two">
             <img
-              className="video__data-view-image"
+              className="video__data-views-icon"
               src={viewIcon}
               alt="view icon"
             />
-            <h3 className="video__data-view-num">{videoInfo.views}</h3>
+            <h3 className="video__data-views-num">{videoInfo.views}</h3>
           </div>
-          <div className="video__data-subcontainer">
+          <div className="video__data-subcontainer-three">
             <img
-              className="video__data-view-image"
+              className="video__data-likes-icon"
               src={likeIcon}
-              alt="view icon"
+              alt="likes icon"
             />
-            <h3 className="video__data-view-num">{videoInfo.likes}</h3>
+            <h3 className="video__data-likes-num">{videoInfo.likes}</h3>
           </div>
         </div>
         {/* end of views and likes */}

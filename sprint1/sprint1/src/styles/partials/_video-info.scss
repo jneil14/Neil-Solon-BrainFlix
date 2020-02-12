@@ -1,0 +1,177 @@
+@import "./colors";
+@import "./breakpoints";
+
+
+// end of mobile
+
+
+
+
+
+
+@include tablet {
+    .video__info {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+        .video__title {
+            
+            &-text {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+        // end of video title
+
+        .video__data {
+            display: flex;
+            display: inline;
+            
+            &-subcontainer-one {
+                width: 12.5rem;
+                margin-right: 0;
+                display: flex;
+                margin-bottom: 2rem;
+
+                .video__data-channel {
+                    width: 100%;
+                    margin-right: .5rem;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .video__data-date {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }         
+        }
+        // end of the video title
+
+        .video__data-views-likes {
+            display: flex;
+            display: inline;
+            border-bottom: 2px solid $mercury;
+            
+
+            .video__data-subcontainer-two {
+                display: flex;
+                display: inline;
+                margin-right: 2rem;
+                margin-bottom: 1.5rem;
+
+                .video__data-views-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-views-num {
+                    display: flex;
+                    display: inline;
+                    width: 100%;
+                }
+             }
+
+            .video__data-subcontainer-three {
+                display: flex;
+                display: inline;
+                margin-bottom: 1.5rem;
+
+                .video__data-likes-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-likes-num {
+                    display: flex;
+                    display: inline;
+                    width: 100%;
+                }
+            }
+        }
+        // end of view and likes containers
+    }
+}
+// end of tablet
+
+
+
+
+
+@include desktop {
+    .video__info {
+        margin-left: 11.25rem;
+        margin-right: 1.5rem;
+
+        .video__title {
+            
+            &-text {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+        // end of video title
+
+        .video__data {
+            display: flex;
+            display: inline;
+            
+            &-subcontainer-one {
+                width: 12.5rem;
+                margin-right: 0;
+                display: flex;
+                margin-bottom: 2rem;
+
+                .video__data-channel {
+                    width: 100%;
+                    margin-right: .5rem;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                .video__data-date {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }         
+        }
+        // end of the video title
+
+        .video__data-views-likes {
+            // display: flex;
+            display: inline;
+            border-bottom: 2px solid $mercury;
+            
+
+            .video__data-subcontainer-two {
+                display: flex;
+                display: inline;
+                margin-right: 2rem;
+                margin-bottom: 1.5rem;
+
+                .video__data-views-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-views-num {
+                    display: flex;
+                    display: inline;
+                    width: 100%;
+                }
+             }
+
+            .video__data-subcontainer-three {
+                display: flex;
+                display: inline;
+                margin-bottom: 1.5rem;
+
+                .video__data-likes-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-likes-num {
+                    display: flex;
+                    display: inline;
+                    width: 100%;
+                }
+            }
+        }
+        // end of view and likes containers
+    }
+}
