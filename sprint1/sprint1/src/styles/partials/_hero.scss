@@ -1,6 +1,6 @@
 @import "./colors";
 @import "./breakpoints";
-
+@import "./fonts";
 
 @include mobile {
     .hero {
@@ -50,3 +50,5 @@
         }
     }
 }
+
+

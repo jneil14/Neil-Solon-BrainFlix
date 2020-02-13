@@ -1,3 +1,18 @@
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
 @media only screen and (max-width: 677px) {
   .header {
     height: 10.56rem;
@@ -56,6 +71,7 @@
     height: 3rem;
     background-color: #0095FF;
     color: #FFFFFF;
+    font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
     border-radius: 4px;
@@ -137,6 +153,7 @@
     height: 3rem;
     background-color: #0095FF;
     color: #FFFFFF;
+    font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
     border-radius: 4px;
@@ -215,6 +232,7 @@
     width: 6.25rem;
     height: 3rem;
     background-color: #0095FF;
+    font-family: avenir-next-regular;
     color: #FFFFFF;
     font-size: 0.875rem;
     line-height: 1.375rem;
@@ -227,6 +245,21 @@
     height: 3rem;
     border-radius: 70%;
   }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
 @media only screen and (max-width: 677px) {
@@ -276,47 +309,58 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 677px) {
   .video__info {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .video__info .video__title-text {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-family: avenir-next-bold;
     font-size: 1.5rem;
     line-height: 2rem;
   }
-  .video__info .video__data {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: inline;
-  }
   .video__info .video__data-subcontainer-one {
-    width: 12.5rem;
-    margin-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 2rem;
   }
   .video__info .video__data-subcontainer-one .video__data-channel {
-    width: 100%;
     margin-right: .5rem;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: avenir-next-demi;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .video__info .video__data-subcontainer-one .video__data-date {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: avenir-next-regular;
+    color: #AFAFAF;
   }
   .video__info .video__data-views-likes {
+    width: 18rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: inline;
-    border-bottom: 2px solid #E1E1E1;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two {
     display: -webkit-box;
@@ -334,7 +378,7 @@
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    width: 100%;
+    font-family: avenir-next-regular;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three {
     display: -webkit-box;
@@ -351,56 +395,144 @@
     display: -ms-flexbox;
     display: flex;
     display: inline;
+    font-family: avenir-next-regular;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .video__info {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .video__info .video__title-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-family: avenir-next-bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .video__info .video__data {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  .video__info .video__data-subcontainer-one {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .video__info .video__data-subcontainer-one .video__data-channel {
+    margin-right: .5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: avenir-next-demi;
+  }
+  .video__info .video__data-subcontainer-one .video__data-date {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: avenir-next-regular;
+    color: #AFAFAF;
+  }
+  .video__info .video__data-views-likes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    margin-right: 1.5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    font-family: avenir-next-regular;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
+    margin-right: .5rem;
+  }
+  .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    font-family: avenir-next-regular;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .video__info {
+    width: 44.5rem;
     margin-left: 11.25rem;
-    margin-right: 1.5rem;
   }
   .video__info .video__title-text {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-family: avenir-next-bold;
     font-size: 1.5rem;
     line-height: 2rem;
   }
   .video__info .video__data {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: inline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1.5rem;
   }
   .video__info .video__data-subcontainer-one {
-    width: 12.5rem;
     margin-right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 2rem;
   }
   .video__info .video__data-subcontainer-one .video__data-channel {
-    width: 100%;
     margin-right: .5rem;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: avenir-next-demi;
   }
   .video__info .video__data-subcontainer-one .video__data-date {
     margin-top: 0;
     margin-bottom: 0;
+    font-family: avenir-next-regular;
+    color: #AFAFAF;
   }
   .video__info .video__data-views-likes {
-    display: inline;
-    border-bottom: 2px solid #E1E1E1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-style: none;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    margin-right: 2rem;
-    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
     margin-right: .5rem;
@@ -410,14 +542,13 @@
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    width: 100%;
+    font-family: avenir-next-regular;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    margin-bottom: 1.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
     margin-right: .5rem;
@@ -427,7 +558,157 @@
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    width: 100%;
+    font-family: avenir-next-regular;
+  }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 677px) {
+  .description {
+    border-top: 2px solid #E1E1E1;
+  }
+  .description__display-text {
+    font-family: avenir-next-regular;
+    font-size: .8125rem;
+    line-height: 1.125rem;
+  }
+  .number__comments-text {
+    font-family: avenir-next-demi;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .description {
+    border-top: 2px solid #E1E1E1;
+  }
+  .description__display {
+    width: 30.5rem;
+    margin-top: 2.5rem;
+  }
+  .description__display-text {
+    font-family: avenir-next-regular;
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    margin-bottom: 4rem;
+  }
+  .number__comments-text {
+    font-family: avenir-next-demi;
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .description {
+    border-top: 2px solid #E1E1E1;
+  }
+  .description__display {
+    width: 30.5rem;
+    margin-top: 2.5rem;
+  }
+  .description__display-text {
+    font-family: avenir-next-regular;
+    font-size: .8125rem;
+    line-height: 1.125rem;
+    margin-bottom: 4rem;
+  }
+  .number__comments-text {
+    font-family: avenir-next-demi;
+    font-size: .875rem;
+    line-height: 1.375rem;
+  }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 677px) {
+  .input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .input__title {
+    color: #AFAFAF;
+    font-family: avenir-next-demi;
+    font-size: .75rem;
+    line-height: 1.25rem;
+    margin: 0;
+    margin-left: 4.25rem;
+  }
+  .input .input__use {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 2px solid #E1E1E1;
+  }
+  .input .input__use-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-right: 1.3rem;
+    display: inline;
+  }
+  .input .input__use-box {
+    height: 12.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input .input__use-box .input__use-text {
+    width: 13.5rem;
+    height: 7rem;
+    border: 2px solid #E1E1E1;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 1rem;
+  }
+  .input .input__use-box .input__use-text:active {
+    border: 2px solid #0095FF;
+  }
+  .input .input__use-box .input__use-button {
+    width: 13.5rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: avenir-next-demi;
+    color: #FFFFFF;
+    background-color: #0095FF;
+    border-radius: 4px;
+    border-style: none;
   }
 }
 

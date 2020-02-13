@@ -1,24 +1,18 @@
 @import "./colors";
 @import "./breakpoints";
+@import "./fonts";
 
-
-// end of mobile
-
-
-
-
-
-
-@include tablet {
+@include mobile {
     .video__info {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
 
         .video__title {
             
             &-text {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
+                font-family: avenir-next-bold;
                 font-size: 1.5rem;
                 line-height: 2rem;
             }
@@ -26,33 +20,34 @@
         // end of video title
 
         .video__data {
-            display: flex;
-            display: inline;
-            
+
             &-subcontainer-one {
-                width: 12.5rem;
-                margin-right: 0;
                 display: flex;
                 margin-bottom: 2rem;
+                
 
                 .video__data-channel {
-                    width: 100%;
                     margin-right: .5rem;
                     margin-top: 0;
                     margin-bottom: 0;
+                    font-family: avenir-next-demi;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
                 }
                 .video__data-date {
                     margin-top: 0;
                     margin-bottom: 0;
+                    font-family: avenir-next-regular;
+                    color: $silver;
                 }
             }         
         }
         // end of the video title
 
         .video__data-views-likes {
+            width: 18rem;
             display: flex;
-            display: inline;
-            border-bottom: 2px solid $mercury;
+            // border-bottom: 2px solid $mercury;
             
 
             .video__data-subcontainer-two {
@@ -67,7 +62,7 @@
                 .video__data-views-num {
                     display: flex;
                     display: inline;
-                    width: 100%;
+                    font-family: avenir-next-regular;
                 }
              }
 
@@ -82,7 +77,94 @@
                 .video__data-likes-num {
                     display: flex;
                     display: inline;
-                    width: 100%;
+                    font-family: avenir-next-regular;
+                }
+            }
+        }
+        // end of view and likes containers
+    }
+}
+// end of mobile
+
+
+
+
+
+// start of tablet
+@include tablet {
+    .video__info {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 2rem;
+
+        .video__title {
+            
+            &-text {
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                font-family: avenir-next-bold;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+        // end of video title
+
+        .video__data {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            
+            &-subcontainer-one {
+                margin-right: 0;
+                display: flex;
+
+                .video__data-channel {
+                    margin-right: .5rem;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: avenir-next-demi;
+                }
+                .video__data-date {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-family: avenir-next-regular;
+                    color: $silver
+                }
+            }         
+        }
+        // end of the video title
+
+        .video__data-views-likes {
+            display: flex;
+            display: inline;
+            
+            .video__data-subcontainer-two {
+                display: flex;
+                display: inline;
+                margin-right: 1.5rem;
+
+                .video__data-views-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-views-num {
+                    display: flex;
+                    display: inline;
+                    font-family: avenir-next-regular;
+                }
+             }
+
+            .video__data-subcontainer-three {
+                display: flex;
+                display: inline;
+
+                .video__data-likes-icon{
+                    margin-right: .5rem;
+                }
+                .video__data-likes-num {
+                    display: flex;
+                    display: inline;
+                    font-family: avenir-next-regular;
                 }
             }
         }
@@ -95,16 +177,20 @@
 
 
 
+
+// start of desktop
 @include desktop {
     .video__info {
+        width: 44.5rem;
         margin-left: 11.25rem;
-        margin-right: 1.5rem;
+        // border-bottom: 2px solid $mercury;
 
         .video__title {
             
             &-text {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
+                font-family: avenir-next-bold;
                 font-size: 1.5rem;
                 line-height: 2rem;
             }
@@ -112,40 +198,39 @@
         // end of video title
 
         .video__data {
+            width: 100%;
             display: flex;
-            display: inline;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
             
             &-subcontainer-one {
-                width: 12.5rem;
                 margin-right: 0;
                 display: flex;
-                margin-bottom: 2rem;
 
                 .video__data-channel {
-                    width: 100%;
                     margin-right: .5rem;
                     margin-top: 0;
                     margin-bottom: 0;
+                    font-family: avenir-next-demi;
                 }
                 .video__data-date {
                     margin-top: 0;
                     margin-bottom: 0;
+                    font-family: avenir-next-regular;
+                    color: $silver
                 }
             }         
         }
         // end of the video title
 
         .video__data-views-likes {
-            // display: flex;
-            display: inline;
-            border-bottom: 2px solid $mercury;
-            
+            display: flex;
+            border-style: none;
 
             .video__data-subcontainer-two {
                 display: flex;
                 display: inline;
-                margin-right: 2rem;
-                margin-bottom: 1.5rem;
+                margin-right: 1.5rem;
 
                 .video__data-views-icon{
                     margin-right: .5rem;
@@ -153,14 +238,13 @@
                 .video__data-views-num {
                     display: flex;
                     display: inline;
-                    width: 100%;
+                    font-family: avenir-next-regular;
                 }
              }
 
             .video__data-subcontainer-three {
                 display: flex;
                 display: inline;
-                margin-bottom: 1.5rem;
 
                 .video__data-likes-icon{
                     margin-right: .5rem;
@@ -168,7 +252,7 @@
                 .video__data-likes-num {
                     display: flex;
                     display: inline;
-                    width: 100%;
+                    font-family: avenir-next-regular;
                 }
             }
         }

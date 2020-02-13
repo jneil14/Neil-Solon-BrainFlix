@@ -1,0 +1,97 @@
+@import './breakpoints';
+@import './colors';
+@import './fonts';
+
+
+
+@include mobile {
+    .description {
+        border-top: 2px solid $mercury;
+
+        &__display {
+
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: .8125rem;
+                line-height: 1.125rem;
+            }
+        }
+    }
+
+    .number__comments {
+        
+            &-text {
+                font-family: avenir-next-demi;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+}
+// end of mobile
+
+
+
+
+
+
+@include tablet {
+    .description {
+        border-top: 2px solid $mercury;
+
+        &__display {
+            width: 30.5rem;
+            margin-top: 2.5rem;
+
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: .8125rem;
+                line-height: 1.125rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .number__comments {
+        
+            &-text {
+                font-family: avenir-next-demi;
+                font-size: .875rem;
+                line-height: 1.375rem;
+            }
+        }
+}
+// end of tablet
+
+
+
+
+
+
+// start of desktop
+@include desktop {
+    .description {
+        border-top: 2px solid $mercury;
+
+        &__display {
+            width: 30.5rem;
+            margin-top: 2.5rem;
+
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: .8125rem;
+                line-height: 1.125rem;
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    .number__comments {
+        
+            &-text {
+                font-family: avenir-next-demi;
+                font-size: .875rem;
+                line-height: 1.375rem;
+            }
+        }
+}
