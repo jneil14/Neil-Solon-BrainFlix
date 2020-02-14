@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Videos({ videoData }) {
   // let mappedVideos = videoData.filter().map(video => {
-  // see if you can figure out how to filter out the first video e.g. the code above chaining .map after .filter
+  
   let mappedVideos = videoData.filter((vid, i) => {
       if (i !== 0) {
           return vid

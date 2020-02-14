@@ -40,6 +40,8 @@
                     border-radius: 4px;
                     outline: none;
                     margin-right: 1rem;
+                    padding-left: .8rem;
+                    font-family: avenir-next-regular;
                 }
 
                 .input__use-text:active {
@@ -114,6 +116,8 @@
                     border-radius: 4px;
                     outline: none;
                     margin-right: 1rem;
+                    padding-left: .8rem;
+                    font-family: avenir-next-regular;
                 }
 
                 .input__use-text:active {
@@ -150,6 +154,7 @@
     .input {
         width: 44.5rem;
         margin-left: 11.25rem;
+        margin-right: 0;
         margin-bottom: 1.5rem;
 
         &__title {
@@ -178,7 +183,7 @@
             // input box container
             &-box {
                 display: flex;
-                margin-right: 1.5rem;
+                margin-right: 0;
 
                 .input__use-text {
                     width: 27.5rem; 
@@ -187,6 +192,9 @@
                     border-radius: 4px;
                     outline: none;
                     margin-right: 1rem;
+                    padding-left: .8rem;
+                    font-family: avenir-next-regular;
+                    
                 }
 
                 .input__use-text:active {

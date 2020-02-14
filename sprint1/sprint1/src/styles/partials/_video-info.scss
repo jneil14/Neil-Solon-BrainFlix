@@ -103,7 +103,9 @@
         margin-bottom: 2rem;
 
         .video__title {
-            
+            margin-left: 0;
+            color: $black;
+
             &-text {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
@@ -188,10 +190,11 @@
     .video__info {
         width: 44.5rem;
         margin-left: 11.25rem;
-        // border-bottom: 2px solid $mercury;
+        margin-right: 0;
 
         .video__title {
-            
+            color: $black;
+
             &-text {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
@@ -250,6 +253,7 @@
             .video__data-subcontainer-three {
                 display: flex;
                 display: inline;
+                margin-right: 2rem;
 
                 .video__data-likes-icon{
                     margin-right: .5rem;

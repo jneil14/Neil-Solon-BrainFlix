@@ -1,52 +1,147 @@
-@import './breakpoints';
-@import './colors';
-@import './fonts';
-
+@import "./breakpoints";
+@import "./colors";
+@import "./fonts";
 
 @include mobile {
-    .video {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1.5rem;
+  .video {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
 
-        &__title {
-            font-family: avenir-next-regular;
-            color: $silver;
-            margin-left: 1rem;
-            margin-right: 1rem;
-
-        }
-
-        // videos container
-        &__data {
-            display: flex;
-            &-actual {
-                width: 7.5rem;
-                height: 4.3rem;
-                margin-left: 0;
-            }
-
-            // videos info container
-            &-info {
-                display: flex;
-                flex-direction: column;
-                margin-left: 1rem;
-
-                .video__data-title {
-                    margin: 0;
-                    margin-bottom: .5rem;
-                    font-family: avenir-next-demi;
-                    font-size: .8125rem;
-                    line-height: 1.125rem;
-
-                }
-                .video__data-channel {
-                    margin: 0;
-                    font-family: avenir-next-regular;
-                    font-size: .8125rem;
-                    line-height: 1.125rem;
-                }
-            }
-        }
+    &__title {
+      font-family: avenir-next-regular;
+      color: $silver;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
+
+    // videos container
+    &__data {
+      display: flex;
+
+      &-actual {
+        width: 7.5rem;
+        height: 4.3rem;
+        border-radius: 4px;
+        margin-left: 0;
+      }
+
+      // videos info container
+      &-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        .video__data-title {
+          margin: 0;
+          margin-bottom: 0.5rem;
+          font-family: avenir-next-demi;
+          font-size: 0.8125rem;
+          line-height: 1.125rem;
+        }
+        .video__data-channel {
+          margin: 0;
+          font-family: avenir-next-regular;
+          font-size: 0.8125rem;
+          line-height: 1.125rem;
+        }
+      }
+    }
+  }
+}
+// end of mobile
+
+// start of tablet
+@include tablet {
+  .video {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    &__title {
+      font-family: avenir-next-regular;
+      color: $silver;
+      margin-left: 1.5rem;
+    }
+
+    // videos container
+    &__data {
+      display: flex;
+      &-actual {
+        width: 7.5rem;
+        height: 4.3rem;
+        margin-left: 0;
+        border-radius: 4px;
+      }
+
+      // videos info container
+      &-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+
+        .video__data-title {
+          width: 11.3rem;
+          margin: 0;
+          font-family: avenir-next-demi;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+        }
+        .video__data-channel {
+          margin: 0;
+          font-family: avenir-next-regular;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+        }
+      }
+    }
+  }
+}
+// end of tablet
+
+// start of desktop
+@include desktop {
+  .video {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    &__title {
+      font-family: avenir-next-regular;
+      color: $silver;
+      margin-left: 1.5rem;
+    }
+
+    // videos container
+    &__data {
+      display: flex;
+      &-actual {
+        width: 7.5rem;
+        height: 4.3rem;
+        margin-left: 0;
+        border-radius: 4px;
+      }
+
+      // videos info container
+      &-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5rem;
+
+        .video__data-title {
+          width: 11.3rem;
+          margin: 0;
+          font-family: avenir-next-demi;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+        }
+        .video__data-channel {
+          margin: 0;
+          font-family: avenir-next-regular;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+        }
+      }
+    }
+  }
 }

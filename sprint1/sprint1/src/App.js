@@ -124,17 +124,20 @@ function App() {
 
 
 
-
-
   return (
     <div>
       <Header />
       <Hero />
-      <VideoInfo mainVideo = {mainVideo}/>
-      <UserInput />
-      <Comments comments={comments} />
-      <Videos videoData = {videoData} />
-
+      <div className="video__data-container">
+        <div className="video__info-holder">
+          <VideoInfo mainVideo={mainVideo} />
+          <UserInput />
+          <Comments comments={comments} />
+        </div>
+        <div className="next__videos-holder">
+          <Videos videoData={videoData} />
+        </div>
+      </div>
     </div>
   );
 }
