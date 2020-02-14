@@ -6,7 +6,7 @@ export default function Description(props) {
     <div className="description">
       <div className="description__display">
         <p className="description__display-text">
-          {props.videoInfo.comments}
+          {props.videoInfo.description}
         </p>
       </div>
 

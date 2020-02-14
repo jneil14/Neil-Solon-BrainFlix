@@ -53,6 +53,152 @@
                     margin-right: 1rem;
                     margin-bottom: 1.5rem;
                     font-family: avenir-next-demi;
+                    font-size: 1rem;
+                    line-height: 1.5rem;    
+                    color: $white;
+                    background-color: $brainflix-blue;
+                    border-radius: 4px;
+                    border-style: none;
+
+                }
+            }
+  
+        }
+    }
+}
+// end of mobile
+
+
+
+
+
+
+
+
+// start of tablet
+@include tablet {
+    .input {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+
+        &__title {
+            color: $silver;
+            font-family: avenir-next-demi;
+            font-size: .75rem;
+            line-height: 1.25rem;
+            margin: 0;
+            margin-top: 2rem;
+            margin-left: 4.25rem;
+        }
+
+        .input__use {
+            display: flex;
+            border-bottom: 2px solid $mercury;
+
+            &-pic {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 100%;
+                margin-right: 1.3rem;
+                display: inline;
+            }
+
+            &-box {
+                display: flex;
+                margin-right: 1.5rem;
+
+                .input__use-text {
+                    width: 27.5rem; 
+                    height: 3rem;
+                    border: 2px solid $mercury;
+                    border-radius: 4px;
+                    outline: none;
+                    margin-right: 1rem;
+                }
+
+                .input__use-text:active {
+                    border: 2px solid $brainflix-blue;
+                }
+
+                .input__use-button {
+                    width: 10rem;
+                    height: 3rem;
+                    margin-right: 2.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: avenir-next-demi;
+                    color: $white;
+                    background-color: $brainflix-blue;
+                    border-radius: 4px;
+                    border-style: none;
+
+                }
+            }
+  
+        }
+    }
+}
+// end of tablet
+
+
+
+
+
+
+
+// start of desktop
+@include desktop {
+    .input {
+        width: 44.5rem;
+        margin-left: 11.25rem;
+        margin-bottom: 1.5rem;
+
+        &__title {
+            color: $silver;
+            font-family: avenir-next-demi;
+            font-size: .75rem;
+            line-height: 1.25rem;
+            margin: 0;
+            margin-top: 2rem;
+            margin-left: 4.25rem;
+        }
+
+        .input__use {
+            display: flex;
+            border-bottom: 2px solid $mercury;
+
+            &-pic {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 100%;
+                margin-right: 1.3rem;
+                display: inline;
+            }
+
+
+            // input box container
+            &-box {
+                display: flex;
+                margin-right: 1.5rem;
+
+                .input__use-text {
+                    width: 27.5rem; 
+                    height: 3rem;
+                    border: 2px solid $mercury;
+                    border-radius: 4px;
+                    outline: none;
+                    margin-right: 1rem;
+                }
+
+                .input__use-text:active {
+                    border: 2px solid $brainflix-blue;
+                }
+
+                .input__use-button {
+                    width: 10rem;
+                    height: 3rem;
+                    margin-right: 2.5rem;
+                    margin-bottom: 1.5rem;
+                    font-family: avenir-next-demi;
                     color: $white;
                     background-color: $brainflix-blue;
                     border-radius: 4px;

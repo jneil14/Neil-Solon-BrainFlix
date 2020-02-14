@@ -9,7 +9,7 @@ function CommentInput () {
             <div className="input__use">
                 <img className="input__use-pic" src={userImage}  alt="user" />
                 <div className="input__use-box">
-                    <input type="text" className="input__use-text" />
+                    <input type="text" className="input__use-text" placeholder="Add a new comment" />
                     <button className="input__use-button">COMMENT</button>
                 </div>
                 
