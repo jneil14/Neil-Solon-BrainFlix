@@ -53,9 +53,13 @@
     margin-right: 0.5rem;
   }
   .header .searchbar__input {
+    width: 14.5rem;
+    height: 2.5rem;
     border: none;
+    font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
+    outline: none;
   }
   .header .user {
     height: 4rem;
@@ -134,9 +138,12 @@
   }
   .header .searchbar__input {
     width: 10rem;
+    height: 2.5rem;
     border: none;
+    font-family: avenir-next-regular;
     font-size: 1rem;
     line-height: 1.5rem;
+    outline: none;
   }
   .header .user {
     height: 4rem;
@@ -682,7 +689,7 @@
   .input__title {
     color: #AFAFAF;
     font-family: avenir-next-demi;
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     margin: 0;
     margin-left: 4.25rem;
@@ -717,10 +724,14 @@
     border-radius: 4px;
     outline: none;
     margin-right: 1rem;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
     font-family: avenir-next-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
   }
-  .input .input__use-box .input__use-text:active {
+  .input .input__use-box .input__use-text:focus {
     border: 2px solid #0095FF;
   }
   .input .input__use-box .input__use-button {
@@ -747,7 +758,7 @@
   .input__title {
     color: #AFAFAF;
     font-family: avenir-next-demi;
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     margin: 0;
     margin-top: 2rem;
@@ -779,10 +790,19 @@
     border-radius: 4px;
     outline: none;
     margin-right: 1rem;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
+    padding-top: 0.5rem;
     font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .input .input__use-box .input__use-text:active {
+  .input .input__use-box .input__use-text:focus {
     border: 2px solid #0095FF;
   }
   .input .input__use-box .input__use-button {
@@ -808,7 +828,7 @@
   .input__title {
     color: #AFAFAF;
     font-family: avenir-next-demi;
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.25rem;
     margin: 0;
     margin-top: 2rem;
@@ -840,10 +860,10 @@
     border-radius: 4px;
     outline: none;
     margin-right: 1rem;
-    padding-left: .8rem;
+    padding-left: 0.8rem;
     font-family: avenir-next-regular;
   }
-  .input .input__use-box .input__use-text:active {
+  .input .input__use-box .input__use-text:focus {
     border: 2px solid #0095FF;
   }
   .input .input__use-box .input__use-button {
@@ -1167,6 +1187,8 @@
     height: 4.3rem;
     margin-left: 0;
     border-radius: 4px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .video__data-info {
     display: -webkit-box;
@@ -1193,14 +1215,17 @@
   }
 }
 
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }

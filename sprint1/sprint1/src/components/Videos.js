@@ -2,15 +2,16 @@ import React from "react";
 
 export default function Videos({ videoData }) {
   // let mappedVideos = videoData.filter().map(video => {
-  
-  let mappedVideos = videoData.filter((vid, i) => {
+
+  let mappedVideos = videoData
+    .filter((vid, i) => {
       if (i !== 0) {
-          return vid
+        return vid;
       }
-  }).map(video => {
-    return (
-      <>
-        <div className="video">
+    })
+    .map((video, index) => {
+      return (
+        <div key={index} className="video">
           {/* container for video data */}
           <div className="video__data">
             <img className="video__data-actual" src={video.image} />
@@ -20,9 +21,8 @@ export default function Videos({ videoData }) {
             </div>
           </div>
         </div>
-      </>
-    );
-  });
+      );
+    });
 
   return (
     <>

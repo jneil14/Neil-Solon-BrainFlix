@@ -34,9 +34,13 @@
         margin-right: 0.5rem;
       }
       &__input {
+        width: 14.5rem;
+        height: 2.5rem;
         border: none;
+        font-family: avenir-next-regular;
         font-size: 0.875rem;
         line-height: 1.375rem;
+        outline: none;
       }
     }
 
@@ -112,9 +116,12 @@
       }
       &__input {
         width: 10rem;
+        height: 2.5rem;
         border: none;
+        font-family: avenir-next-regular;
         font-size: 1rem;
         line-height: 1.5rem;
+        outline: none;
       }
     }
 

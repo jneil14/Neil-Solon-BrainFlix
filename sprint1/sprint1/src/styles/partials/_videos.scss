@@ -115,11 +115,13 @@
     // videos container
     &__data {
       display: flex;
+
       &-actual {
         width: 7.5rem;
         height: 4.3rem;
         margin-left: 0;
         border-radius: 4px;
+        object-fit: cover;
       }
 
       // videos info container
