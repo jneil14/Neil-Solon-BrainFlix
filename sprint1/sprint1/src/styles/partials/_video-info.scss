@@ -38,12 +38,16 @@
                     font-family: avenir-next-demi;
                     font-size: 1rem;
                     line-height: 1.5rem;
+                    display: flex;
+                    align-items: flex-end;
                 }
                 .video__data-date {
                     margin-top: 0;
                     margin-bottom: 0;
                     font-family: avenir-next-regular;
                     color: $silver;
+                    display: flex;
+                    align-items: center;
                 }
             }         
         }
@@ -52,7 +56,6 @@
         .video__data-views-likes {
             width: 18rem;
             display: flex;
-            // border-bottom: 2px solid $mercury;
             
 
             .video__data-subcontainer-two {
@@ -103,6 +106,8 @@
         margin-bottom: 2rem;
 
         .video__title {
+            font-family: avenir-next-bold;
+            
             margin-left: 0;
             color: $black;
 
@@ -110,8 +115,8 @@
                 margin-top: 2rem;
                 margin-bottom: 1rem;
                 font-family: avenir-next-bold;
-                font-size: 1.5rem;
-                line-height: 2rem;
+                font-size: 2.25rem;
+                line-height: 2.75rem;
             }
         }
         // end of video title
@@ -125,6 +130,7 @@
             &-subcontainer-one {
                 margin-right: 0;
                 display: flex;
+                align-items: center;
 
                 .video__data-channel {
                     margin-right: .5rem;
@@ -144,12 +150,12 @@
 
         .video__data-views-likes {
             display: flex;
-            display: inline;
             
             .video__data-subcontainer-two {
                 display: flex;
                 display: inline;
                 margin-right: 1.5rem;
+                align-items: center;
 
                 .video__data-views-icon{
                     margin-right: .5rem;
@@ -199,8 +205,8 @@
                 margin-top: 2rem;
                 margin-bottom: 1rem;
                 font-family: avenir-next-bold;
-                font-size: 1.5rem;
-                line-height: 2rem;
+                font-size: 2.25rem;
+                line-height: 2.75rem;
             }
         }
         // end of video title

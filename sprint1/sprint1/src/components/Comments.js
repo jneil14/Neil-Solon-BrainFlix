@@ -10,7 +10,7 @@ const Comments = ({ comments }) => {
         <div className="comment__sub">
           {/* name and date container */}
           <div className="comment__sub-details">
-            <h4 className="comment__sub-name"> {comment.name} </h4>
+            <h2 className="comment__sub-name"> {comment.name} </h2>
             <p className="comment__sub-date"> {comment.date} </p>
           </div>
 

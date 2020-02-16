@@ -16,7 +16,7 @@ export default function VideoInfo(props) {
       <div className="video__data">
         <div className="video__data-subcontainer-one">
           <h3 className="video__data-channel">{videoInfo.channel}</h3>
-          <h4 className="video__data-date">{videoInfo.timestamp}</h4>
+          <p className="video__data-date">{videoInfo.timestamp}</p>
         </div>
 
         {/* views and likes container */}

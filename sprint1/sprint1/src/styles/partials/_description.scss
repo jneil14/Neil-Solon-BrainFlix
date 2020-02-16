@@ -6,13 +6,16 @@
 
 @include mobile {
     .description {
-        border-top: 2px solid $mercury;
+        width: 18rem;
+        border-top: 1px solid $mercury;
+        
 
         &__display {
 
             &-text {
+                margin-top: 1.5rem;
                 font-family: avenir-next-regular;
-                font-size: .8125rem;
+                font-size: 0.8125rem;
                 line-height: 1.125rem;
             }
         }
@@ -24,7 +27,8 @@
                 font-family: avenir-next-demi;
                 font-size: 1rem;
                 line-height: 1.5rem;
-                margin-bottom: 2.5rem;
+                margin-top: 2.5rem;
+                margin-bottom: 2rem;
             }
         }
 }
@@ -37,7 +41,7 @@
 
 @include tablet {
     .description {
-        border-top: 2px solid $mercury;
+        border-top: 1px solid $mercury;
 
         &__display {
             width: 30.5rem;

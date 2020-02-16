@@ -7,18 +7,18 @@
         margin-left: 1rem;
         margin-right: 1rem;
         display: flex;
-        border-bottom: 1.5px solid $mercury;
+        border-bottom: 1px solid $mercury;
         
         .comment__image {
             width: 2.5rem;
-            height: 2.5rem;
+            height: 2.5em;
             border-radius: 100%;
             background-color: $mercury;
             margin-top: 2rem;
         }
 
         .comment__sub {
-            width: 100%;
+            width: 80%;
             margin-top: 1.5rem;
             margin-left: 1rem;
             
@@ -31,7 +31,7 @@
 
                 .comment__sub-name {
                     font-family: avenir-next-demi;
-                    font-size: .875rem;
+                    font-size: 0.875rem;
                     line-height: 1.375rem;
                     margin: 0;
                 }
@@ -47,8 +47,8 @@
             // actual comment
             &-text {
                 font-family: avenir-next-regular;
-                font-size: .8125rem;
-                line-height: 1.125rem;
+                font-size: .875rem;
+                line-height: 1.375rem;
                 margin-top: 0rem;
                 margin-bottom: 1.5rem;
             }
@@ -110,7 +110,7 @@
             // actual comment
             &-text {
                 font-family: avenir-next-regular;
-                font-size: .875rem;
+                font-size: 0.875rem;
                 line-height: 1.375rem;
                 margin-top: 0rem;
                 margin-bottom: 1.5rem;

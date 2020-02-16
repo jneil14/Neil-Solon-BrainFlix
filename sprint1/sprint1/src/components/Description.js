@@ -12,7 +12,7 @@ export default function Description(props) {
 
       {/* number of comments */}
       <div className="number__comments">
-          <h3 className="number__comments-text">{props.videoInfo.commentNum}</h3>
+          <h2 className="number__comments-text">{props.videoInfo.commentNum}</h2>
       </div>
     </div>
   );

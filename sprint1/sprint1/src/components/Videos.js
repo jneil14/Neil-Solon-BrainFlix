@@ -17,7 +17,7 @@ export default function Videos({ videoData }) {
             <img className="video__data-actual" src={video.image} />
             <div className="video__data-info">
               <h4 className="video__data-title"> {video.title}</h4>
-              <p className="video__data-channel"> {video.channel} </p>
+              <h4 className="video__data-channel"> {video.channel} </h4>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ export default function Videos({ videoData }) {
 
   return (
     <>
-      <h5 className="video__title">NEXT VIDEO</h5>
+      <p className="video__title">NEXT VIDEO</p>
       {mappedVideos}
     </>
   );

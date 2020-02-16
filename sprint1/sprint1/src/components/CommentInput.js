@@ -4,7 +4,7 @@ import userImage from "../Assets/Images/Mohan-muruge.jpg";
 function CommentInput() {
   return (
     <div className="input">
-      <p className="input__title">JOIN THE CONVERSATION</p>
+      <h4 className="input__title">JOIN THE CONVERSATION</h4>
       <div className="input__use">
         <img className="input__use-pic" src={userImage} alt="user" />
         <div className="input__use-box">
