@@ -4,10 +4,10 @@
 
 @include mobile {
     .hero {
-        height: 11.43rem;
         
         .hero__video {
             width: 100vw;
+            height: 11.43rem;
         }
     }
 }

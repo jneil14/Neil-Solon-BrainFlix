@@ -20,7 +20,7 @@
     }
 
     .searchbar {
-      width: 18rem;
+      width: 90%;
       height: 3rem;
       border: 1px solid $mercury;
       border-radius: 4px;
@@ -53,7 +53,7 @@
       display: flex;
 
       &__upload-btn {
-        width: 14rem;
+        width: 77%;
         height: 3rem;
         background-color: $brainflix-blue;
         color: $white;
