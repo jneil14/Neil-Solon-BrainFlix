@@ -1,0 +1,37 @@
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/video-info";
+@import "./partials/description";
+@import "./partials/user-input";
+@import "./partials/comments";
+@import "./partials/videos";
+@import "./partials/breakpoints";
+@import "./partials/colors";
+
+html,
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@include desktop {
+  .video__data-container {
+    display: flex;
+
+    .video__info-holder {
+      margin-right: 0;
+    }
+
+    .next__videos-holder {
+      width: 100%;
+      border-left: 1px solid $mercury;
+    }
+  }
+}

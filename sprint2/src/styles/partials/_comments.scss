@@ -1,0 +1,188 @@
+@import './breakpoints';
+@import './colors';
+@import './fonts';
+
+@include mobile {
+    .comment{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        display: flex;
+        border-bottom: 1px solid $mercury;
+        
+        .comment__image {
+            width: 2.5rem;
+            height: 2.5em;
+            border-radius: 100%;
+            background-color: $mercury;
+            margin-top: 2rem;
+        }
+
+        .comment__sub {
+            width: 80%;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            
+            // container for name and date
+            &-details {
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .comment__sub-name {
+                    font-family: avenir-next-demi;
+                    font-size: 0.875rem;
+                    line-height: 1.375rem;
+                    margin: 0;
+                }
+                .comment__sub-date {
+                    font-family: avenir-next-regular;
+                    color: $silver;
+                    font-size: .875rem;
+                    line-height: 1.375rem;
+                    margin: 0;
+                }
+            }
+
+            // actual comment
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: .875rem;
+                line-height: 1.375rem;
+                margin-top: 0rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    }
+
+}
+// end of mobile
+
+
+
+
+
+
+// start of tablet 
+@include tablet {
+    .comment{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        display: flex;
+        border-bottom: 1.5px solid $mercury;
+        
+        .comment__image {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            background-color: $mercury;
+            margin-top: 2rem;
+        }
+
+        .comment__sub {
+            width: 39rem;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            
+            // container for name and date
+            &-details {
+                height: 40px;
+                display: flex;
+                align-items: center;
+
+                .comment__sub-name {
+                    font-family: avenir-next-demi;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin: 0;
+                    margin-right: .5rem;
+                }
+                .comment__sub-date {
+                    font-family: avenir-next-regular;
+                    color: $silver;
+                    font-size: .875rem;
+                    line-height: 1.375rem;    
+                    margin: 0;
+                }
+            }
+
+            // actual comment
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                margin-top: 0rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    }
+
+}
+// end of tablet
+
+
+
+
+
+
+
+
+// start of desktop
+@include desktop {
+    .comment{
+        width: 44.5rem;
+        margin-left: 11.25rem;
+        display: flex;
+        border-bottom: 1.5px solid $mercury;
+        margin-right: 0;
+        
+        .comment__image {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 100%;
+            background-color: $mercury;
+            margin-top: 2rem;
+        }
+
+        .comment__sub {
+            width: 39rem;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            
+            // container for name and date
+            &-details {
+                height: 40px;
+                display: flex;
+                align-items: center;
+
+                .comment__sub-name {
+                    font-family: avenir-next-demi;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin: 0;
+                    margin-right: .5rem;
+                }
+                .comment__sub-date {
+                    font-family: avenir-next-regular;
+                    color: $silver;
+                    font-size: .875rem;
+                    line-height: 1.375rem;    
+                    margin: 0;
+                }
+            }
+
+            // actual comment
+            &-text {
+                font-family: avenir-next-regular;
+                font-size: .875rem;
+                line-height: 1.375rem;
+                margin-top: 0rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+    }
+
+}
