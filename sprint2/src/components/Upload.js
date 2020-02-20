@@ -4,7 +4,7 @@ import Header from './Header'
 export default function Upload() {
     return (
       <>
-        {Header}
+        <Header />
         <div className="upload">
           <h1 className="upload__title">Upload Video</h1>
 
