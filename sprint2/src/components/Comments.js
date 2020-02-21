@@ -2,7 +2,7 @@ import React from "react";
 
 const Comments = props => {
   if (props.comments === undefined) {
-    return <p>loading comments...</p>;
+    return <h2>Loading!</h2>
   } else {
     let mappedComments = props.comments.map((comment, index) => {
       return (

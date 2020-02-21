@@ -9,14 +9,15 @@ import {
 } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Home from "./components/Home";
-import userImage from "./Assets/Images/Mohan-muruge.jpg";
-import video from "./Assets/Video/BrainStation Sample Video.mp4";
-import VideoInfo from "./components/VideoInfo";
-import UserInput from "./components/CommentInput";
-import Comments from "./components/Comments";
-import Videos from "./components/Videos";
+// import userImage from "./Assets/Images/Mohan-muruge.jpg";
+// import video from "./Assets/Video/BrainStation Sample Video.mp4";
+// import VideoInfo from "./components/VideoInfo";
+// import UserInput from "./components/CommentInput";
+
+// import Videos from "./components/Videos";
+// import Comments from "./components/Comments";
 import Upload from "./components/Upload";
+import Home from "./components/Home";
 
 class App extends Component {
   //   let comments = [{
@@ -120,55 +121,55 @@ class App extends Component {
   //     image: 'type of <string>'
   // };
 
-  state = {
-    sideVideos: [],
-    mainVideo: {},
-    loading: false
-  };
+  // state = {
+  //   sideVideos: [],
+  //   mainVideo: {}
+  //   // loading: false
+  // };
 
-  componentDidMount() {
-    this.setState({ loading: true });
-    axios
-      .all([
-        axios.get(
-          "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-        ),
-        axios.get(
-          "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-        )
-      ])
-      .then(responseArray => {
-        console.log("response array", responseArray);
-        this.setState({
-          sideVideos: responseArray[0].data,
-          mainVideo: responseArray[1].data,
-          loading: false
-        });
-      });
-    // axios
-    //   .get(
-    //     "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-    //   )
-    //   .then(response => {
-    //     const sideVideos = response.data;
-    //     console.log("side vids", sideVideos);
+  // componentDidMount() {
+  //   this.setState({ loading: true });
+  //   axios
+  //     .all([
+  //       axios.get(
+  //         "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
+  //       ),
+  //       axios.get(
+  //         "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
+  //       )
+  //     ])
+  //     .then(responseArray => {
+  //       console.log("response array", responseArray);
+  //       this.setState({
+  //         sideVideos: responseArray[0].data,
+  //         mainVideo: responseArray[1].data
+  //         // loading: false
+  //       });
+  //     });
+  // axios
+  //   .get(
+  //     "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
+  //   )
+  //   .then(response => {
+  //     const sideVideos = response.data;
+  //     console.log("side vids", sideVideos);
 
-    //     axios
-    //       .get(
-    //         "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-    //       )
-    //       .then(response => {
-    //         console.log("res", response);
-    //         const mainVideo = response.data;
-    //         console.log("main vid", mainVideo);
-    //         this.setState({
-    //           sideVideos,
-    //           mainVideo: mainVideo
-    //         });
-    //       })
-    //       .catch(err => console.log(err));
-    //   });
-  }
+  //     axios
+  //       .get(
+  //         "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
+  //       )
+  //       .then(response => {
+  //         console.log("res", response);
+  //         const mainVideo = response.data;
+  //         console.log("main vid", mainVideo);
+  //         this.setState({
+  //           sideVideos,
+  //           mainVideo: mainVideo
+  //         });
+  //       })
+  //       .catch(err => console.log(err));
+  //   });
+  // }
 
   render() {
     return (
@@ -176,25 +177,21 @@ class App extends Component {
         <Header />
         <Hero />
 
-        <div className="video__data-container">
-          <div className="video__info-holder">
-            <VideoInfo mainVideo={this.state.mainVideo} />
-            <UserInput />
-            {!this.state.loading ? (
-              <Comments comments={this.state.mainVideo.comments} />
-            ) : (
-              <p>Loading</p>
-            )}
-          </div>
-          <div className="next__videos-holder">
-            <Videos videoData={this.state.sideVideos} />
-          </div>
-        </div>
-
         <Switch>
-          <Route path="/" component={Home} exact />
+          <Route
+            path="/"
+            render={routerProps => {
+              return <Home routerProps={routerProps} />;
+            }}
+            exact
+          />
           <Route path="/upload" component={Upload} />
-          <Route path="/video/:id" />
+          <Route
+            path="/video/:id"
+            render={routerProps => {
+              return <Home routerProps={routerProps} />;
+            }}
+          />
         </Switch>
       </Router>
     );
@@ -202,3 +199,16 @@ class App extends Component {
 }
 
 export default App;
+
+{
+  /* <Route
+  path="/images/:id"
+  render={props => {
+    console.log(props.match.params.id);
+    const image = this.state.images.find(image => {
+      return props.match.params.id === image.id;
+    });
+    return <ImageDetails title={image.title} url={image.url} />;
+  }}
+/>; */
+}
