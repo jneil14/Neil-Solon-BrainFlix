@@ -6,8 +6,8 @@
 
 @include mobile {
     .description {
-        width: 18rem;
         border-top: 1px solid $mercury;
+        margin-right: 0;
         
 
         &__display {

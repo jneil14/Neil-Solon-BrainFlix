@@ -1,12 +1,14 @@
-@import "./partials/header";
-@import "./partials/hero";
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
 @import "./partials/video-info";
 @import "./partials/description";
 @import "./partials/user-input";
 @import "./partials/comments";
 @import "./partials/videos";
-@import "./partials/breakpoints";
-@import "./partials/colors";
+@import "./partials/header";
+@import "./partials/hero";
+@import "./partials/upload";
 
 html,
 body {

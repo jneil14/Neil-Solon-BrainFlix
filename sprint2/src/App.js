@@ -174,24 +174,20 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Header />
-        <Hero />
-
         <Switch>
-          <Route
-            path="/"
-            render={routerProps => {
+          <Route path="/" render={routerProps => {
               return <Home routerProps={routerProps} />;
-            }}
-            exact
-          />
+            }} exact />
           <Route path="/upload" component={Upload} />
-          <Route
-            path="/video/:id"
+          <Route path="/video/:id"
             render={routerProps => {
+              // console.log(routerProps.match.params.id);
+              // const video = this.state.videos.find(video => {
+              //   console.log(routerProps.match.params.id === video.id);
+              //   return routerProps.match.params.id === video.id;
+              // });
               return <Home routerProps={routerProps} />;
-            }}
-          />
+            }} />
         </Switch>
       </Router>
     );

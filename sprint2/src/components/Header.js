@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../Assets/Logo/Logo-brainflix.png";
 import searchIcon from "../Assets/Icons/PNG/Icon-search.png";
-import userImage from "../Assets/Images/Mohan-muruge.jpg";
+
 import { Link } from "react-router-dom";
+import plus from "../Assets/Icons/SVG/Icon-upload.svg";
 
 export default function Header() {
   return (
@@ -22,10 +23,9 @@ export default function Header() {
       {/* upload btn and user image */}
       <div className="user">
         <Link to="/upload" className="user__upload-btn">
-          {" "}
-          &#43; UPLOAD
+          <img className="user__upload-icon" src={plus} /> UPLOAD
         </Link>
-        <img className="user__image" src={userImage} alt="image" />
+        <div className="user__image"></div>
       </div>
     </div>
   );

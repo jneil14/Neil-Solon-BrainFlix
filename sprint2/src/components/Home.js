@@ -48,22 +48,46 @@ class Home extends Component {
       });
   }
 
-  // componentDidUpdate(prevProps) {
-  //   console.log(prevProps, this.props);
-  //   console.log("Updated!");
-  //   if(prevProps.match.params.id !== this.props.match.params.id) {
-  //     axios.get(
-  //       "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-  //     ),
-  //       axios.get(
-  //         "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-  //       );
-  //   }
-  // }
+  fetchVideo = id => {
+    console.log("fetch video", id);
+    axios
+      .get(
+        `https://project-2-api.herokuapp.com/videos/${id}?api_key=59903f8f-ba1b-4870-afb2-527d1860f390`
+      )
+      .then(res => {
+        console.log(res.data);
+        this.setState({ mainVideo: res.data });
+      });
+
+    // make axios get request for video
+    // update state of video
+  };
+
+  componentDidUpdate(prevProps) {
+    console.log("prevProps", prevProps);
+    console.log("Updated!", this.props);
+
+    console.log("current id from url", this.props.routerProps.match.params.id);
+
+    const vidId = this.props.routerProps.match.params.id;
+    const prevPropsId = prevProps.routerProps.match.params.id;
+    if (prevPropsId !== this.props.routerProps.match.params.id) {
+      this.fetchVideo(vidId);
+    }
+
+    //
+
+    //     // axios.get(
+    //     //   "https://project-2-api.herokuapp.com/videos/{vidId}?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
+    //     // );
+    // }
+  }
 
   render() {
     return (
       <>
+        <Header />
+        <Hero currentVideo = {this.state.mainVideo} />
         <div className="video__data-container">
           <div className="video__info-holder">
             <VideoInfo mainVideo={this.state.mainVideo} />
@@ -85,8 +109,6 @@ class Home extends Component {
 }
 
 export default Home;
-
-
 
 {
   /* <Route

@@ -3,6 +3,9 @@
 @import "./fonts";
 
 @include mobile {
+  .video__data--link {
+    text-decoration: none;
+  }
   .video {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -23,11 +26,15 @@
     &__data {
       display: flex;
 
-      &-actual {
-        width: 7.5rem;
-        height: 4.3rem;
+      &-image {
         border-radius: 4px;
         margin-left: 0;
+      }
+
+      &-actual {
+        width: 7.5rem;
+        height: 4.375rem;
+        border-radius: 4px;
         object-fit: cover;
       }
 
@@ -43,21 +50,20 @@
           font-family: avenir-next-demi;
           font-size: 0.8125rem;
           line-height: 1.125rem;
+          text-decoration: none;
         }
         .video__data-channel {
           margin: 0;
           font-family: avenir-next-regular;
           font-size: 0.875rem;
           line-height: 1.375rem;
+          text-decoration: none;
         }
       }
     }
   }
 }
 // end of mobile
-
-
-
 
 // start of tablet
 @include tablet {
@@ -78,6 +84,12 @@
     &__data {
       display: flex;
 
+      &-image {
+        // width: 120px;
+        // height: 70px;
+        border-radius: 4px;
+      }
+
       &-actual {
         width: 7.5rem;
         height: 4.3rem;
@@ -91,6 +103,7 @@
         display: flex;
         flex-direction: column;
         margin-left: 1.5rem;
+        text-decoration: none;
 
         .video__data-title {
           width: 11.1rem;
@@ -98,22 +111,20 @@
           font-family: avenir-next-demi;
           font-size: 0.875rem;
           line-height: 1.375rem;
+          text-decoration: none;
         }
         .video__data-channel {
           margin: 0;
           font-family: avenir-next-regular;
           font-size: 0.875rem;
           line-height: 1.375rem;
+          text-decoration: none;
         }
       }
     }
   }
 }
 // end of tablet
-
-
-
-
 
 // start of desktop
 @include desktop {

@@ -15,11 +15,14 @@ export default function Videos({ videoData }) {
       .map((vid, index) => {
         console.log(vid.id);
         return (
-          <Link to={`/videos/${vid.id}`} key={vid.id}>
+          <Link className ="video__data--link" to={`/video/${vid.id}`} key={vid.id}>
             <div key={index} className="video">
               {/* container for video data */}
               <div className="video__data">
-                <img className="video__data-actual" src={vid.image} />
+                <div className="video__data-image">
+                  <img className="video__data-actual" src={vid.image} />
+                </div>
+
                 <div className="video__data-info">
                   <h4 className="video__data-title"> {vid.title}</h4>
                   <h4 className="video__data-channel"> {vid.channel} </h4>

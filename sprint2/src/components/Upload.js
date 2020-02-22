@@ -1,17 +1,18 @@
 import React from 'react'
 import Header from './Header'
+import vidThumbNail from "../Assets/Images/video-list-1.jpg";
 
 export default function Upload() {
     return (
       <>
-        <Header />
+        {<Header />}
         <div className="upload">
           <h1 className="upload__title">Upload Video</h1>
 
           {/* vid thumbnail container and vid details container holder */}
           <div className="upload__content">
             <h3 className="upload__thumbnail-text">VIDEO THUMBNAIL</h3>
-            <img src=" " alt="video thumbnail" />
+            <img className="upload__thumbnail-image" src={vidThumbNail} alt="video thumbnail" />
 
             {/* end of video thumbnail */}
 
@@ -32,11 +33,8 @@ export default function Upload() {
                 <h3 className="upload__details-description-text">
                   ADD A VIDEO DESCRIPTION
                 </h3>
-                <textarea
-                  className="upload__details-description-input"
-                  placeholder="Add a description to your video"
-                >
-                  {" "}
+                <textarea className="upload__details-description-input" placeholder="Add a description to your video">
+                 
                 </textarea>
               </div>
             </div>
@@ -44,14 +42,11 @@ export default function Upload() {
           </div>
           {/* end of vid thumbnail container and vid details container holder */}
 
-
-            {/* Publish and Cancel options container */}
+          {/* Publish and Cancel options container */}
           <div className="upload__options">
             <button className="upload__options-publish">PUBLISH</button>
             <button className="upload__options-cancel">CANCEL</button>
           </div>
-
-          
         </div>
       </>
     );

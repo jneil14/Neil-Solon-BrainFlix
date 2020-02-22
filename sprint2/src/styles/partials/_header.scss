@@ -1,6 +1,7 @@
 @import "./colors";
 @import "./breakpoints";
 @import "./fonts";
+// @import "../Assets/Images/Mohan-muruge.jpg";
 
 @include mobile {
   .header {
@@ -44,40 +45,52 @@
         outline: none;
       }
     }
+  }
 
-    .user {
-      height: 4rem;
-      margin-left: 1rem;
+  .user {
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+
+    .user__upload-btn {
+      width: 77%;
+      height: 3rem;
+      background-color: $brainflix-blue;
+      color: $white;
+      font-family: avenir-next-regular;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 4px;
+      outline: none;
+      margin-top: 0.5rem;
       margin-right: 1rem;
-      margin-bottom: 1rem;
+      text-decoration: none;
       display: flex;
-
-      &__upload-btn {
-        width: 77%;
-        height: 3rem;
-        background-color: $brainflix-blue;
-        color: $white;
-        font-family: avenir-next-regular;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: 4px;
-        outline: none;
-        margin-top: 0.5rem;
-        margin-right: 1rem;
-      }
-
-      &__upload-btn:hover {
-        background-color: $brainflix-hover;
-      }
-
-      &__image {
-        width: 3rem;
-        height: 3rem;
-        margin-top: 0.5rem;
-        border-radius: 70%;
-        object-fit: cover;
-      }
+      justify-content: center;
+      align-items: center;
     }
+
+    &__upload-btn:hover {
+      background-color: $brainflix-hover;
+    }
+
+    .user__image {
+      width: 3rem;
+      height: 3rem;
+      margin-top: 0.5rem;
+      border-radius: 70%;
+      background-image: url("../Assets/Images/Mohan-muruge.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+  }
+
+  .user__upload-icon {
+    margin-right: 0.5rem;
   }
 }
 
@@ -102,7 +115,7 @@
       &__logo {
         height: 50%;
       }
-    } 
+    }
     // contains image
 
     .searchbar {
@@ -130,27 +143,143 @@
         color: $black;
         outline: none;
       }
-
     }
 
-    .user {    // contains button and user image
+    .user {
+      // contains button and user image
       height: 4rem;
       margin-left: 1.5rem;
       margin-top: 1rem;
       margin-bottom: 1rem;
       display: flex;
 
-      &__upload-btn {   
+      // &__upload-btn {
+      //   width: 6.25rem;
+      //   height: 3rem;
+      //   background-color: $brainflix-blue;
+      //   color: $white;
+      //   font-family: avenir-next-regular;
+      //   font-size: 0.875rem;
+      //   line-height: 1.375rem;
+      //   border-radius: 4px;
+      //   outline: none;
+      //   margin-right: 1.5rem;
+      //   text-decoration: none;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      // }
+
+      &__upload-btn:hover {
+        background-color: $brainflix-hover;
+      }
+
+      &__image {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 70%;
+        object-fit: cover;
+        background-image: url("../Assets/Images/Mohan-muruge.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  .user__upload-btn {
+    width: 6.25rem;
+    height: 3rem;
+    background-color: $brainflix-blue;
+    color: $white;
+    font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user__upload-icon {
+    margin-right: 0.5rem;
+  }
+}
+// end of tablet
+
+// start of desktop
+@include desktop {
+  .header {
+    height: 5rem;
+    display: flex;
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+
+    .head {
+      height: 3rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__logo {
+        height: 50%;
+      }
+    }
+    // contains image
+
+    .searchbar {
+      width: 100%;
+      height: 3rem;
+      border: 1px solid $mercury;
+      border-radius: 4px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 31.81rem;
+      display: flex;
+      align-items: center;
+
+      &__icon {
+        margin-left: 1rem;
+        margin-right: 0.5rem;
+      }
+      &__input {
+        width: 10rem;
+        border: none;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $black;
+      }
+    }
+
+    .user {
+      // contains button and user image
+      height: 4rem;
+      margin-left: 1.5rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+
+      &__upload-btn {
         width: 6.25rem;
         height: 3rem;
         background-color: $brainflix-blue;
-        color: $white;
         font-family: avenir-next-regular;
+        color: $white;
         font-size: 0.875rem;
         line-height: 1.375rem;
         border-radius: 4px;
         outline: none;
         margin-right: 1.5rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       &__upload-btn:hover {
@@ -162,98 +291,11 @@
         height: 3rem;
         border-radius: 70%;
         object-fit: cover;
+        background-image: url("../Assets/Images/Mohan-muruge.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
       }
-    } 
-  }
-}
-// end of tablet
-
-
-
-
-
-
-
-
-
-
-// start of desktop
-@include desktop {
-    .header {
-        height: 5rem;
-        display: flex;
-        margin-left: 11.25rem;
-        margin-right: 11.25rem;
-
-        .head {
-            height: 3rem;
-            margin-left: 1rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &__logo {
-                height: 50%;
-            }
-        } 
-        // contains image
-
-        .searchbar {
-            width: 100%;
-            height: 3rem;
-            border: 1px solid $mercury;
-            border-radius: 4px;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            margin-left: 31.81rem;
-            display: flex;
-            align-items: center;
-
-            &__icon {
-                margin-left: 1rem;
-                margin-right: 0.5rem;
-            }
-            &__input {
-                width: 10rem;
-                border: none;
-                font-size: 1rem;
-                line-height: 1.5rem;
-                color: $black;
-            }
-        }
-
-        .user {    // contains button and user image
-            height: 4rem;
-            margin-left: 1.5rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            display: flex;
-
-            &__upload-btn {   
-                width: 6.25rem;
-                height: 3rem;
-                background-color: $brainflix-blue;
-                font-family: avenir-next-regular;
-                color: $white;
-                font-size: 0.875rem;
-                line-height: 1.375rem;
-                border-radius: 4px;
-                outline: none;
-                margin-right: 1.5rem;
-            }
-
-            &__upload-btn:hover {
-              background-color: $brainflix-hover;
-            }
-
-            &__image {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 70%;
-                object-fit: cover;
-            }
-        } 
+    }
   }
 }

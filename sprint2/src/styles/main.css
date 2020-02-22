@@ -13,264 +13,6 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
-  .header {
-    height: 10.56rem;
-  }
-  .header .head {
-    height: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .head__logo {
-    height: 50%;
-  }
-  .header .searchbar {
-    width: 90%;
-    height: 3rem;
-    border: 1px solid #E1E1E1;
-    border-radius: 4px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .searchbar__icon {
-    margin-left: 1rem;
-    margin-right: 0.5rem;
-  }
-  .header .searchbar__input {
-    width: 14.5rem;
-    height: 2.5rem;
-    border: none;
-    font-family: avenir-next-regular;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    color: #323232;
-    outline: none;
-  }
-  .header .user {
-    height: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .user__upload-btn {
-    width: 77%;
-    height: 3rem;
-    background-color: #0095FF;
-    color: #FFFFFF;
-    font-family: avenir-next-regular;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 4px;
-    outline: none;
-    margin-top: 0.5rem;
-    margin-right: 1rem;
-  }
-  .header .user__upload-btn:hover {
-    background-color: #0065AD;
-  }
-  .header .user__image {
-    width: 3rem;
-    height: 3rem;
-    margin-top: 0.5rem;
-    border-radius: 70%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .header {
-    height: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-  .header .head {
-    height: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .head__logo {
-    height: 50%;
-  }
-  .header .searchbar {
-    width: 100%;
-    height: 3rem;
-    border: 1px solid #E1E1E1;
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 10.56rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .searchbar__icon {
-    margin-left: 1rem;
-    margin-right: 0.5rem;
-  }
-  .header .searchbar__input {
-    width: 10rem;
-    height: 2.5rem;
-    border: none;
-    font-family: avenir-next-regular;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #323232;
-    outline: none;
-  }
-  .header .user {
-    height: 4rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .user__upload-btn {
-    width: 6.25rem;
-    height: 3rem;
-    background-color: #0095FF;
-    color: #FFFFFF;
-    font-family: avenir-next-regular;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    border-radius: 4px;
-    outline: none;
-    margin-right: 1.5rem;
-  }
-  .header .user__upload-btn:hover {
-    background-color: #0065AD;
-  }
-  .header .user__image {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 70%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .header {
-    height: 5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: 11.25rem;
-    margin-right: 11.25rem;
-  }
-  .header .head {
-    height: 3rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .head__logo {
-    height: 50%;
-  }
-  .header .searchbar {
-    width: 100%;
-    height: 3rem;
-    border: 1px solid #E1E1E1;
-    border-radius: 4px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 31.81rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .searchbar__icon {
-    margin-left: 1rem;
-    margin-right: 0.5rem;
-  }
-  .header .searchbar__input {
-    width: 10rem;
-    border: none;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: #323232;
-  }
-  .header .user {
-    height: 4rem;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .user__upload-btn {
-    width: 6.25rem;
-    height: 3rem;
-    background-color: #0095FF;
-    font-family: avenir-next-regular;
-    color: #FFFFFF;
-    font-size: 0.875rem;
-    line-height: 1.375rem;
-    border-radius: 4px;
-    outline: none;
-    margin-right: 1.5rem;
-  }
-  .header .user__upload-btn:hover {
-    background-color: #0065AD;
-  }
-  .header .user__image {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 70%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
 @font-face {
   font-family: avenir-next-regular;
   src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
@@ -286,67 +28,7 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
-  .hero .hero__video {
-    width: 100vw;
-    height: 11.43rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .hero {
-    width: 100%;
-    height: 25rem;
-    background-color: #323232;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero .hero__video {
-    width: 43.75rem;
-    height: 100%;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .hero {
-    width: 100%;
-    height: 33.75rem;
-    background-color: #323232;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero .hero__video {
-    width: 59rem;
-    height: 100%;
-    margin-left: 11.25rem;
-    margin-right: 11.25rem;
-  }
-}
-
-@font-face {
-  font-family: avenir-next-regular;
-  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
-}
-
-@font-face {
-  font-family: avenir-next-demi;
-  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
-}
-
-@font-face {
-  font-family: avenir-next-bold;
-  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
-}
-
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
   .video__info {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -378,7 +60,7 @@
     margin-bottom: 2rem;
   }
   .video__info .video__data-subcontainer-one .video__data-channel {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     margin-top: 0;
     margin-bottom: 0;
     font-family: avenir-next-demi;
@@ -408,17 +90,22 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: inline;
     margin-right: 2.3rem;
     margin-bottom: 1.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
     display: -webkit-box;
@@ -428,6 +115,7 @@
     font-family: avenir-next-regular;
     font-size: 0.8125rem;
     line-height: 1.125rem;
+    margin: 0;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three {
     display: -webkit-box;
@@ -440,7 +128,9 @@
             align-items: baseline;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
     display: -webkit-box;
@@ -491,7 +181,7 @@
             align-items: center;
   }
   .video__info .video__data-subcontainer-one .video__data-channel {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     margin-top: 0;
     margin-bottom: 0;
     font-family: avenir-next-demi;
@@ -518,7 +208,7 @@
             align-items: center;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
     display: -webkit-box;
@@ -534,7 +224,7 @@
     display: inline;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
     display: -webkit-box;
@@ -578,7 +268,7 @@
     display: flex;
   }
   .video__info .video__data-subcontainer-one .video__data-channel {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
     margin-top: 0;
     margin-bottom: 0;
     font-family: avenir-next-demi;
@@ -603,7 +293,7 @@
     margin-right: 1.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-two .video__data-views-num {
     display: -webkit-box;
@@ -620,7 +310,7 @@
     margin-right: 2rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-icon {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
   .video__info .video__data-views-likes .video__data-subcontainer-three .video__data-likes-num {
     display: -webkit-box;
@@ -646,10 +336,10 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
   .description {
-    width: 18rem;
     border-top: 1px solid #E1E1E1;
+    margin-right: 0;
   }
   .description__display-text {
     margin-top: 1.5rem;
@@ -724,7 +414,7 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
   .input {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -738,17 +428,11 @@
     margin-left: 4.25rem;
   }
   .input .input__use {
+    width: 18rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     border-bottom: 1px solid #E1E1E1;
-  }
-  .input .input__use-pic {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 100%;
-    margin-right: 1.3rem;
-    display: inline;
   }
   .input .input__use-box {
     height: 12.5rem;
@@ -759,19 +443,19 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .input .input__use-box .input__use-text {
-    width: 13.5rem;
+    width: 12.5rem;
     height: 7rem;
     border: 2px solid #E1E1E1;
     border-radius: 4px;
     outline: none;
-    margin-right: 1rem;
     padding-left: 0.8rem;
     font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
-    padding-right: 1rem;
     padding-top: 1rem;
   }
   .input .input__use-box .input__use-text:focus {
@@ -781,7 +465,6 @@
     width: 13.5rem;
     height: 4rem;
     margin-top: 1rem;
-    margin-right: 1rem;
     margin-bottom: 1.5rem;
     font-family: avenir-next-regular;
     font-size: 1rem;
@@ -790,6 +473,16 @@
     background-color: #0095FF;
     border-radius: 4px;
     border-style: none;
+  }
+  .input__use-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    display: inline;
+    background-image: url("../Assets/Images/Mohan-muruge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -878,7 +571,7 @@
     margin: 0;
     margin-top: 2rem;
     margin-left: 4.25rem;
-    padding-bottom: .3rem;
+    padding-bottom: 0.3rem;
   }
   .input .input__use {
     display: -webkit-box;
@@ -942,7 +635,7 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
   .comment {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1119,7 +812,10 @@
   src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
 }
 
-@media only screen and (max-width: 677px) {
+@media only screen and (max-width: 767px) {
+  .video__data--link {
+    text-decoration: none;
+  }
   .video {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -1140,11 +836,14 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .video__data-actual {
-    width: 7.5rem;
-    height: 4.3rem;
+  .video__data-image {
     border-radius: 4px;
     margin-left: 0;
+  }
+  .video__data-actual {
+    width: 7.5rem;
+    height: 4.375rem;
+    border-radius: 4px;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -1164,12 +863,14 @@
     font-family: avenir-next-demi;
     font-size: 0.8125rem;
     line-height: 1.125rem;
+    text-decoration: none;
   }
   .video__data-info .video__data-channel {
     margin: 0;
     font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
+    text-decoration: none;
   }
 }
 
@@ -1191,6 +892,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .video__data-image {
+    border-radius: 4px;
+  }
   .video__data-actual {
     width: 7.5rem;
     height: 4.3rem;
@@ -1208,6 +912,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 1.5rem;
+    text-decoration: none;
   }
   .video__data-info .video__data-title {
     width: 11.1rem;
@@ -1215,12 +920,14 @@
     font-family: avenir-next-demi;
     font-size: 0.875rem;
     line-height: 1.375rem;
+    text-decoration: none;
   }
   .video__data-info .video__data-channel {
     margin: 0;
     font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
+    text-decoration: none;
   }
 }
 
@@ -1270,6 +977,495 @@
     font-family: avenir-next-regular;
     font-size: 0.875rem;
     line-height: 1.375rem;
+  }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 10.56rem;
+  }
+  .header .head {
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .head__logo {
+    height: 50%;
+  }
+  .header .searchbar {
+    width: 90%;
+    height: 3rem;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .searchbar__icon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .header .searchbar__input {
+    width: 14.5rem;
+    height: 2.5rem;
+    border: none;
+    font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #323232;
+    outline: none;
+  }
+  .user {
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .user .user__upload-btn {
+    width: 77%;
+    height: 3rem;
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-family: avenir-next-regular;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user__upload-btn:hover {
+    background-color: #0065AD;
+  }
+  .user .user__image {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    border-radius: 70%;
+    background-image: url("../Assets/Images/Mohan-muruge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .user__upload-icon {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .header .head {
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .head__logo {
+    height: 50%;
+  }
+  .header .searchbar {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 10.56rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .searchbar__icon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .header .searchbar__input {
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    font-family: avenir-next-regular;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #323232;
+    outline: none;
+  }
+  .header .user {
+    height: 4rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .user__upload-btn:hover {
+    background-color: #0065AD;
+  }
+  .header .user__image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: url("../Assets/Images/Mohan-muruge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .user__upload-btn {
+    width: 6.25rem;
+    height: 3rem;
+    background-color: #0095FF;
+    color: #FFFFFF;
+    font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user__upload-icon {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+  }
+  .header .head {
+    height: 3rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .head__logo {
+    height: 50%;
+  }
+  .header .searchbar {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 31.81rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .searchbar__icon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+  }
+  .header .searchbar__input {
+    width: 10rem;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #323232;
+  }
+  .header .user {
+    height: 4rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .user__upload-btn {
+    width: 6.25rem;
+    height: 3rem;
+    background-color: #0095FF;
+    font-family: avenir-next-regular;
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    border-radius: 4px;
+    outline: none;
+    margin-right: 1.5rem;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .user__upload-btn:hover {
+    background-color: #0065AD;
+  }
+  .header .user__image {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-image: url("../Assets/Images/Mohan-muruge.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 767px) {
+  .hero .hero__video {
+    width: 100vw;
+    height: 11.43rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 25rem;
+    background-color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero__video {
+    width: 43.75rem;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    width: 100%;
+    height: 33.75rem;
+    background-color: #323232;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero .hero__video {
+    width: 59rem;
+    height: 100%;
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+  }
+}
+
+@font-face {
+  font-family: avenir-next-regular;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf");
+}
+
+@font-face {
+  font-family: avenir-next-demi;
+  src: url("../Assets/GlobalFont/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf");
+}
+
+@font-face {
+  font-family: avenir-next-bold;
+  src: url("../Assets/GlobalFont/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
+@media only screen and (max-width: 767px) {
+  .upload {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .upload .upload__title {
+    font-family: avenir-next-bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .upload__content .upload__thumbnail-text {
+    font-family: avenir-next-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #AFAFAF;
+  }
+  .upload__content .upload__thumbnail-image {
+    width: 18rem;
+    height: 9.5625rem;
+    border-radius: 4px;
+  }
+  .upload__content .upload__details .upload__details-title-text {
+    font-family: avenir-next-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #AFAFAF;
+  }
+  .upload__content .upload__details .upload__details-title-input {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    padding-left: 1rem;
+    font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .upload__content .upload__details .upload__details-description {
+    margin-bottom: 2rem;
+  }
+  .upload__content .upload__details .upload__details-description-text {
+    font-family: avenir-next-regular;
+    font-size: 0.8125rem;
+    line-height: 1.125rem;
+    color: #AFAFAF;
+  }
+  .upload__content .upload__details .upload__details-description-input {
+    width: 18rem;
+    height: 8.9375rem;
+    border-radius: 4px;
+    border: 1px solid #E1E1E1;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-family: avenir-next-regular;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+  }
+  .upload__options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .upload__options-publish {
+    width: 18rem;
+    height: 3rem;
+    background-color: #0095FF;
+    border-radius: 4px;
+    font-family: avenir-next-demi;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    border: none;
+  }
+  .upload__options-cancel {
+    width: 18rem;
+    height: 3rem;
+    padding-top: 1.5rem;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #0095FF;
+    font-family: avenir-next-demi;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    border: none;
   }
 }
 
