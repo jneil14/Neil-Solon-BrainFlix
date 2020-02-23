@@ -3,9 +3,13 @@
 @import "./fonts";
 
 @include mobile {
+  .upload__container {
+    border-top: 1px solid $mercury;
+  }
   .upload {
     margin-left: 1rem;
     margin-right: 1rem;
+
     .upload__title {
       font-family: avenir-next-bold;
       font-size: 1.5rem;
@@ -20,28 +24,35 @@
         font-size: 0.8125rem;
         line-height: 1.125rem;
         color: $silver;
+        margin: 0;
       }
 
       .upload__thumbnail-image {
         width: 18rem;
         height: 9.5625rem;
         border-radius: 4px;
+        object-fit: cover;
       }
 
       .upload__details {
+
         .upload__details-title {
+          margin-top: 2rem;
+
           &-text {
             font-family: avenir-next-regular;
             font-size: 0.8125rem;
             line-height: 1.125rem;
             color: $silver;
+            margin: 0;
+            margin-bottom: .3rem;
           }
 
           &-input {
-            width: 18rem;
+            width: 100%;
             height: 3rem;
             border-radius: 4px;
-            border: 1px solid $mercury;
+            border: 1.5px solid $mercury;
             padding-left: 1rem;
             font-family: avenir-next-regular;
             font-size: 0.875rem;
@@ -50,19 +61,23 @@
         }
 
         .upload__details-description {
-            margin-bottom: 2rem;
+          margin-top: 1.5rem;
+          margin-bottom: 2rem;
+
           &-text {
             font-family: avenir-next-regular;
             font-size: 0.8125rem;
             line-height: 1.125rem;
             color: $silver;
+            margin: 0;
+            margin-bottom: .3rem;
           }
 
           &-input {
-            width: 18rem;
+            width: 100%;
             height: 8.9375rem;
             border-radius: 4px;
-            border: 1px solid $mercury;
+            border: 1.5px solid $mercury;
             padding-top: 1rem;
             padding-left: 1rem;
             font-family: avenir-next-regular;
@@ -74,33 +89,305 @@
     }
 
     &__options {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
 
-        &-publish {
-            width: 18rem;
-            height: 3rem;
-            background-color: $brainflix-blue;
-            border-radius: 4px;
-            font-family: avenir-next-demi;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            color: $white;
-            border: none;
-        }
+      &-publish {
+        width: 100%;
+        height: 3rem;
+        background-color: $brainflix-blue;
+        border-radius: 4px;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        color: $white;
+        border: none;
+      }
 
-        &-cancel {
-            width: 18rem;
-            height: 3rem;
-            padding-top: 1.5rem;
-            border-radius: 4px;
-            background-color: $white;
-            color: $brainflix-blue;
-            font-family: avenir-next-demi;
-            font-size: 0.875rem;
-            line-height: 1.375rem;
-            border: none;
-        }
+      &-cancel {
+        width: 100%;
+        height: 3rem;
+        padding-top: 1.5rem;
+        border-radius: 4px;
+        background-color: $white;
+        color: $brainflix-blue;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        border: none;
+      }
     }
   }
 }
+// end of mobile
+
+
+
+
+// start of tablet
+@include tablet {
+  .upload__container {
+    border-top: 1px solid $mercury;
+  }
+  .upload {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    .upload__title {
+      font-family: avenir-next-bold;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      border-top: 1.5px solid $mercury;
+
+      .upload__thumbnail {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .upload__thumbnail-text {
+          font-family: avenir-next-regular;
+          font-size: 0.8125rem;
+          line-height: 1.125rem;
+          color: $silver;
+          margin-top: .3rem;
+          margin-bottom: .3rem;
+        }
+  
+        .upload__thumbnail-image {
+          width: 21.5rem;
+          height: 11.4375rem;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+      }
+
+      .upload__details {
+        border-bottom: 1px solid $mercury;
+
+        .upload__details-title {
+
+          &-text {
+            font-family: avenir-next-regular;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            color: $silver;
+            margin-top: .3rem;
+            margin-bottom: .3rem;
+          }
+
+          &-input {
+            width: 100%;
+            height: 3rem;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding-left: 1rem;
+            font-family: avenir-next-regular;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+          }
+        }
+
+        .upload__details-description {
+          margin-bottom: 2.5rem;
+          margin-top: 1.5rem;
+
+          &-text {
+            font-family: avenir-next-regular;
+            font-size: 0.8125rem;
+            line-height: 1.125rem;
+            color: $silver;
+            margin-top: .3rem;
+            margin-bottom: .3rem;
+          }
+
+          &-input {
+            width: 100%;
+            height: 8.9375rem;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            font-family: avenir-next-regular;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+          }
+        }
+      }
+    }
+
+    &__options {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      &-publish {
+        width: 10rem;
+        height: 3rem;
+        background-color: $brainflix-blue;
+        border-radius: 4px;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        color: $white;
+        border: none;
+      }
+
+      &-cancel {
+        width: 10rem;
+        height: 3rem;
+        border-radius: 4px;
+        background-color: $white;
+        color: $brainflix-blue;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+// end of tablet
+
+
+
+// start of desktop
+@include desktop {
+  .upload__container {
+    border-top: 1px solid $mercury;
+  }
+  .upload {
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+
+    .upload__title {
+      font-family: avenir-next-bold;
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__content {
+      display: flex;
+      border-top: 2px solid $mercury;
+      border-bottom: 1.5px solid $mercury;
+
+      .upload__thumbnail {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        margin-right: 1.5rem;
+
+        .upload__thumbnail-text {
+          margin: 0;
+          font-family: avenir-next-demi;
+          font-size: 0.875rem;
+          line-height: 1.375rem;
+          color: $silver;
+        }
+
+        .upload__thumbnail-image {
+          width: 21.5rem;
+          height: 11.4375rem;
+          border-radius: 4px;
+          object-fit: cover;
+        }
+      }
+
+      .upload__details {
+        width: 100%;
+        border-bottom: none;
+
+        .upload__details-title {
+          margin-top: 2.5rem;
+
+          &-text {
+            margin: 0;
+            font-family: avenir-next-demi;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            color: $silver;
+          }
+
+          &-input {
+            width: 100%;
+            height: 3rem;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding-left: 1rem;
+            font-family: avenir-next-regular;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+          }
+        }
+
+        .upload__details-description {
+          margin-top: 1.5rem;
+          margin-bottom: 2.5rem;
+
+          &-text {
+            margin: 0;
+            font-family: avenir-next-demi;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            color: $silver;
+          }
+
+          &-input {
+            width: 100%;
+            height: 5.875rem;
+            border-radius: 4px;
+            border: 1.5px solid $mercury;
+            padding-top: 1rem;
+            padding-left: 1rem;
+            font-family: avenir-next-regular;
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            color: $black;
+          }
+        }
+      }
+    }
+
+    &__options {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: row-reverse;
+
+      &-publish {
+        width: 10rem;
+        height: 3rem;
+        background-color: $brainflix-blue;
+        border-radius: 4px;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        color: $white;
+        border: none;
+      }
+
+      &-cancel {
+        width: 10rem;
+        height: 3rem;
+        border-radius: 4px;
+        background-color: $white;
+        color: $brainflix-blue;
+        font-family: avenir-next-demi;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+// end of desktop
