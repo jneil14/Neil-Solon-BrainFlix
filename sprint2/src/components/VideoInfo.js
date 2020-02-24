@@ -10,6 +10,7 @@ export default function VideoInfo(props) {
 
   return (
     <div className="video__info">
+      {/* next video text container */}
       <div className="video__title">
         <h1 className="video__title-text">{props.mainVideo.title}</h1>
       </div>

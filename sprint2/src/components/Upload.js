@@ -13,9 +13,9 @@ export default function Upload() {
             {/* vid thumbnail container and vid details container holder */}
             <div className="upload__content">
               <div className="upload__thumbnail">
-              <h3 className="upload__thumbnail-text">VIDEO THUMBNAIL</h3>
-              <img className="upload__thumbnail-image" src={vidThumbNail} alt="video thumbnail"/>
-              </div>
+                <h3 className="upload__thumbnail-text">VIDEO THUMBNAIL</h3>
+                <img className="upload__thumbnail-image" src={vidThumbNail} alt="video thumbnail"/>
+              </div>  
               {/* end of video thumbnail */}
 
               {/* upload video details */}
@@ -37,10 +37,9 @@ export default function Upload() {
                   <h3 className="upload__details-description-text">
                     ADD A VIDEO DESCRIPTION
                   </h3>
-                  <textarea
-                    className="upload__details-description-input"
-                    placeholder="Add a description to your video"
-                  ></textarea>
+                  <textarea className="upload__details-description-input" placeholder="Add a description to your video">
+                    
+                  </textarea>
                 </div>
               </div>
               {/*end of video details */}

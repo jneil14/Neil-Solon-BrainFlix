@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../Assets/Logo/Logo-brainflix.png";
 import searchIcon from "../Assets/Icons/PNG/Icon-search.png";
-
 import { Link } from "react-router-dom";
 import plus from "../Assets/Icons/SVG/Icon-upload.svg";
 
@@ -34,4 +33,3 @@ export default function Header() {
   );
 }
 
-// export default Header;

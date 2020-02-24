@@ -1,29 +1,19 @@
 import React, { Component } from "react";
 import axios from "axios";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-  Link
-} from "react-router-dom";
 import Header from "./Header";
 import Hero from "./Hero";
-// import userImage from "./Assets/Images/Mohan-muruge.jpg";
-// import video from "./Assets/Video/BrainStation Sample Video.mp4";
 import VideoInfo from "./VideoInfo";
 import UserInput from "./CommentInput";
 import Comments from "./Comments";
 import Videos from "./Videos";
-import Upload from "./Upload";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       sideVideos: [],
-      mainVideo: {}
-      // loading: false
+      mainVideo: {},
+      loading: false
     };
   }
 
@@ -42,8 +32,8 @@ class Home extends Component {
         console.log("response array", responseArray);
         this.setState({
           sideVideos: responseArray[0].data,
-          mainVideo: responseArray[1].data
-          // loading: false
+          mainVideo: responseArray[1].data,
+          loading: false
         });
       });
   }
@@ -58,9 +48,6 @@ class Home extends Component {
         console.log(res.data);
         this.setState({ mainVideo: res.data });
       });
-
-    // make axios get request for video
-    // update state of video
   };
 
   componentDidUpdate(prevProps) {
@@ -74,13 +61,6 @@ class Home extends Component {
     if (prevPropsId !== this.props.routerProps.match.params.id) {
       this.fetchVideo(vidId);
     }
-
-    //
-
-    //     // axios.get(
-    //     //   "https://project-2-api.herokuapp.com/videos/{vidId}?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-    //     // );
-    // }
   }
 
   render() {
@@ -92,11 +72,11 @@ class Home extends Component {
           <div className="video__info-holder">
             <VideoInfo mainVideo={this.state.mainVideo} />
             <UserInput />
-            {/* {!this.state.loading ? ( */}
+            {!this.state.loading ? (
             <Comments comments={this.state.mainVideo.comments} />
-            {/* ) : (
+            ) : (
               <p>Loading</p>
-            )} */}
+            )} 
           </div>
           <div className="next__videos-holder">
             <Videos videoData={this.state.sideVideos} />
@@ -110,15 +90,3 @@ class Home extends Component {
 
 export default Home;
 
-{
-  /* <Route
-  path="/images/:id"
-  render={props => {
-    console.log(props.match.params.id);
-    const image = this.state.images.find(image => {
-      return props.match.params.id === image.id;
-    });
-    return <ImageDetails title={image.title} url={image.url} />;
-  }}
-/>; */
-}

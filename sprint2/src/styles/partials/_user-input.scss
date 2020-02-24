@@ -22,14 +22,13 @@
       display: flex;
 
       &-box {
-        height: 13.5rem;
         display: flex;
         flex-direction: column;
         margin-left: 1rem;
         margin-right: 0;
 
         .input__use-text {
-          width: 13.5rem;
+          width: 14rem;
           height: 7rem;
           border: 2px solid $mercury;
           border-radius: 4px;
@@ -46,8 +45,8 @@
         }
 
         .input__use-button {
-          width: 13.5rem;
-          height: 4rem;
+          width: 14rem;
+          height: 3rem;
           margin-top: 1rem;
           margin-bottom: 1.5rem;
           font-family: avenir-next-regular;
