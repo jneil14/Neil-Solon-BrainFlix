@@ -1,0 +1,40 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Videos({ videoData }) {
+  console.log("videosD", videoData);
+  if (videoData === undefined) {
+    return <h3 className="video__loading"> Loading Videos...</h3>;
+  } else {
+    let mappedVideos = videoData.filter((vid, index) => {
+        if (index !== 0) {
+          return vid;
+        }
+      }).map((vid, index) => {
+        return (
+          <Link className ="video__data--link" to={`/video/${vid.id}`} key={vid.id}>
+            <div key={index} className="video">
+              {/* container for video data */}
+              <div className="video__data">
+                <div className="video__data-image">
+                  <img className="video__data-actual" src={vid.image} />
+                </div>
+
+                <div className="video__data-info">
+                  <h4 className="video__data-title"> {vid.title}</h4>
+                  <h4 className="video__data-channel"> {vid.channel} </h4>
+                </div>
+              </div>
+            </div>
+          </Link>
+        );
+      });
+
+    return (
+      <>
+        <p className="video__title">NEXT VIDEO</p>
+        {mappedVideos}
+      </>
+    );
+  }
+}
