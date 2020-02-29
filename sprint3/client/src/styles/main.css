@@ -859,6 +859,8 @@
             flex-direction: column;
     margin-left: 1rem;
     width: 100%;
+    color: inherit;
+    text-decoration: none;
   }
   .video__data-info .video__data-title {
     width: 46.5vw;
@@ -923,6 +925,8 @@
             flex-direction: column;
     margin-left: 1.5rem;
     text-decoration: none;
+    color: inherit;
+    text-decoration: none;
   }
   .video__data-info .video__data-title {
     width: 11.1rem;
@@ -977,9 +981,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: 1.5rem;
+    color: inherit;
+    text-decoration: none;
   }
   .video__data--link .video__data-info .video__data-title {
-    width: 11.3rem;
+    width: 11rem;
     margin: 0;
     font-family: avenir-next-demi;
     font-size: 0.875rem;
@@ -1348,6 +1354,8 @@
   .hero .hero__video {
     width: 100vw;
     height: 11.43rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1366,6 +1374,8 @@
   .hero .hero__video {
     width: 43.75rem;
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -1386,6 +1396,8 @@
     height: 100%;
     margin-left: 11.25rem;
     margin-right: 11.25rem;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

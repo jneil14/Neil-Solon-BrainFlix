@@ -1,9 +1,8 @@
 import React from "react";
 
 export default function Description(props) {
-  console.log("description", props.videoInfo);
   if (props.videoInfo.comments === undefined) {
-    return <p>comments loading</p>;
+    return <p>Loading Video Information</p>;
   }
   return (
     <div className="description">

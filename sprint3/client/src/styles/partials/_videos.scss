@@ -44,6 +44,8 @@
         flex-direction: column;
         margin-left: 1rem;
         width: 100%;
+        color: inherit;
+        text-decoration: none;
 
         .video__data-title {
           width: 46.5vw;
@@ -110,6 +112,8 @@
         flex-direction: column;
         margin-left: 1.5rem;
         text-decoration: none;
+        color: inherit;
+        text-decoration: none;
 
         .video__data-title {
           width: 11.1rem;
@@ -165,9 +169,11 @@
           display: flex;
           flex-direction: column;
           margin-left: 1.5rem;
+          color: inherit;
+          text-decoration: none;
 
           .video__data-title {
-            width: 11.3rem;
+            width: 11rem;
             margin: 0;
             font-family: avenir-next-demi;
             font-size: 0.875rem;

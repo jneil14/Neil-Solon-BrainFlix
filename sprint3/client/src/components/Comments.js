@@ -3,7 +3,7 @@ import moment from "moment";
 
 const Comments = props => {
   if (props.comments === undefined) {
-    return <h2>Loading!</h2>;
+    return <h2>Fishing for comments</h2>;
   } else {
     let mappedComments = props.comments.map((comment, index) => {
       return (

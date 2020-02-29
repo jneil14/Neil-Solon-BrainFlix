@@ -17,7 +17,7 @@ export default function VideoInfo(props) {
 
       <div className="video__data">
         <div className="video__data-subcontainer-one">
-          <h3 className="video__data-channel">{videoInfo.channel}</h3>
+          <h3 className="video__data-channel">By {videoInfo.channel}</h3>
           <p className="video__data-date">
             {moment(videoInfo.timestamp).format("MM/DD/YYYY")}
           </p>

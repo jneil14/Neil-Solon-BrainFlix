@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Videos({ videoData }) {
-  console.log("videosD", videoData);
   if (videoData === undefined) {
     return <h3 className="video__loading"> Loading Videos...</h3>;
   } else {
@@ -12,12 +11,20 @@ export default function Videos({ videoData }) {
         }
       }).map((vid, index) => {
         return (
-          <Link className ="video__data--link" to={`/video/${vid.id}`} key={vid.id}>
+          <Link
+            className="video__data--link"
+            to={`/video/${vid.id}`}
+            key={vid.id}
+          >
             <div key={index} className="video">
               {/* container for video data */}
               <div className="video__data">
                 <div className="video__data-image">
-                  <img className="video__data-actual" src={vid.image} />
+                  <img
+                    className="video__data-actual"
+                    src={vid.image}
+                    alt={vid.title}
+                  />
                 </div>
 
                 <div className="video__data-info">

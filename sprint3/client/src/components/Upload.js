@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import vidThumbNail from "../Assets/Images/video-list-1.jpg";
+import vidThumbNail from "../BrainFlix-Sprint-1 3/Assets/Images/Upload-video-preview.jpg";
 
 export default function Upload() {
     return (

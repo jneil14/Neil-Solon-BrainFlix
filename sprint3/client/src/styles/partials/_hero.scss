@@ -8,6 +8,7 @@
         .hero__video {
             width: 100vw;
             height: 11.43rem;
+            object-fit: cover;
         }
     }
 }
@@ -26,6 +27,7 @@
         .hero__video {
             width: 43.75rem;
             height: 100%;
+            object-fit: cover;
         }
     }
 }
@@ -47,6 +49,7 @@
             height: 100%;
             margin-left: 11.25rem;
             margin-right: 11.25rem;
+            object-fit: cover;
         }
     }
 }
