@@ -13,110 +13,53 @@ class Home extends Component {
     this.state = {
       sideVideos: [],
       mainVideo: {},
-      loading: false
+      loading: false,
+      allVideos: []
     };
   }
 
-  // componentDidMount() {
-  //   this.setState({ loading: true });
-  //   axios
-  //     .all([
-  //       axios.get(
-  //         "https://project-2-api.herokuapp.com/videos?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-  //       ),
-  //       axios.get(
-  //         "https://project-2-api.herokuapp.com/videos/1af0jruup5gu?api_key=59903f8f-ba1b-4870-afb2-527d1860f390"
-  //       )
-  //     ])
-  //     .then(responseArray => {
-  //       this.setState({
-  //         sideVideos: responseArray[0].data,
-  //         mainVideo: responseArray[1].data,
-  //         loading: false
-  //       });
-  //     });
-  // }
+  // fetches video by id
+  fetchVideo = id => {
+    axios.get(`http://localhost:5000/api/videos/${id}`)
+      .then(res => {this.setState({ mainVideo: res.data[0] });
+      });
+  };
 
   // own api
   componentDidMount() {
     this.setState({ loading: true });
-    axios.get("/api/videos").then(res => {
-      console.log("res.data", res.data);
+    axios.get("http://localhost:5000/api/videos").then(res => {
       this.setState({
-        sideVideos: res.data,
+        sideVideos: res.data.slice(1, res.data.length),
         mainVideo: res.data[0],
-        loading: false
+        loading: false,
+        allVideos: res.data
       });
     });
   }
 
-  // publish function
-  // handlePublish = event => {
-  //   event.preventDefault();
-
-  //   axios
-  //     .post("api/videos", {
-  //       title: event.target.title.value,
-  //       description: event.target.description.value,
-  //       imageUrl: event.target.imageUrl.value
-  //     })
-  //     .then(res => {
-  //       this.setState({
-  //         videos: res.data
-  //       });
-  //     })
-  //     .catch(err => {
-  //       console.log(err);
-  //     });
-  //   event.target.reset();
-  // };
-
-  fetchVideo = id => {
-    axios
-      .get(
-        // `https://project-2-api.herokuapp.com/videos/${id}?api_key=59903f8f-ba1b-4870-afb2-527d1860f390`
-        `/api/videos/${id}`
-      )
-      .then(res => {
-        this.setState({ mainVideo: res.data[0] });
-      });
-  };
 
   componentDidUpdate(prevProps) {
-    console.log("Home test")
-    console.log(this.props)
-    console.log(prevProps)
-    ///console.log(this.props.routerProps.location.pathname);
-    const vidParams = this.props.routerProps.match.params;
-    const prevPropsParams = prevProps.routerProps.match.params;
-    // just props
+    const vidParams = this.props.match.params;
+    const prevPropsParams = prevProps.match.params;
 
     if (vidParams !== prevPropsParams) {
-      const vidId = this.props.routerProps.match.params.id;
+      const vidId = this.props.match.params.id;
       this.fetchVideo(vidId);
+
+      // updates sideVideos to return the previous video obj
+      let filteredVideos = this.state.allVideos.filter(video => video.id !== vidId);
+      this.setState({
+        sideVideos: filteredVideos
+      });
     }
-    //  else if (this.props.routerProps.location.pathname === "/") {
-    //   // infinite loop oh no!
-    //   console.log("Home");
-    //   // console.log("vid id", this.props.mainVideo.id);
-    //   this.fetchVideo("1af0jruup5gu");
-    // }
   }
 
   render() {
+    // preload check
     if (this.state.sideVideos.length === 0) {
-      return <div className="loading__prompt"> Loading...</div>;
+      return <div className="donut"> </div>;
     }
-
-    // const videos = this.state.videos.map(video => {
-    //   return (
-    //     <li key={video.id} className="videos-item">
-    //       <h4 className="videos-item__title">{video.title}</h4>
-    //       <h4 className="videos-item__channel">{video.channel}</h4>
-    //       <img src={video.imageUrl} alt={video.title} />
-    //     </li>
-    //   );
-    // });
 
     return (
       <>

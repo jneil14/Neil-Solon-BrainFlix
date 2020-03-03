@@ -1,5 +1,4 @@
 import React from "react";
-import userImage from "../Assets/Images/Mohan-muruge.jpg";
 
 function CommentInput() {
   return (

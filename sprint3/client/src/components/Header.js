@@ -15,16 +15,20 @@ export default function Header() {
 
       {/* searchbar section */}
       <div className="header__functions">
-
         <div className="searchbar">
           <img className="searchbar__icon" src={searchIcon} alt="search icon" />
-          <input type="text" className="searchbar__input" placeholder="Search" />
+          <input
+            type="text"
+            className="searchbar__input"
+            placeholder="Search"
+          />
         </div>
 
         {/* upload btn and user image */}
         <div className="user">
           <Link to="/upload" className="user__upload-btn">
-            <img className="user__upload-icon" src={plus} /> UPLOAD
+            <img className="user__upload-icon" src={plus} alt="upload" />
+            UPLOAD
           </Link>
           <div className="user__image"></div>
         </div>

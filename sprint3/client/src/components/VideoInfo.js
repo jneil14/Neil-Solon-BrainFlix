@@ -5,7 +5,6 @@ import Description from "./Description";
 import moment from "moment";
 
 export default function VideoInfo(props) {
-  console.log(props.mainVideo);
   const videoInfo = props.mainVideo;
 
   return (

@@ -1,5 +1,5 @@
 const express = require('express');
-const videoFile = __dirname + '/../../models/videos.json';
+const videoFile = __dirname + "/../../models/videos.json";
 const videos = require(videoFile);
 const helper = require('../../helper/helper');
 const router = express.Router();
@@ -40,19 +40,21 @@ router.get('/:id', (req, res) => {
 });
 
 
-
 // Posting a new video
 router.post('/', (req, res) => {
+    console.log("post");
     const newVideo = {
         id: helper.getNewId(),
         title: req.body.title,
+        channel: "The Flash",
         description: req.body.description,
         image: req.body.image,
         comments: []
     };
+    // Added a channel prop for consistency with the mock-up
 
     // error handling
-    if(!newVideo.title || !newVideo.description || !newVideo.imageUrl) {
+    if(!newVideo.title || !newVideo.description || !newVideo.image) {
         return res.status(400).json({
             errorMessage: `Please provide title, description, and an image URL for the video`
         })
@@ -65,7 +67,7 @@ router.post('/', (req, res) => {
 
 // update videos with id
 router.put('/:id', (req, res) => {
-    const match = videos.some(video => book.id === req.params.id);
+    const match = videos.some(video => video.id === req.params.id);
     if(match) {
         videos.forEach(video => {
             if(video.id === req.params.id) {

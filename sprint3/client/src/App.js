@@ -9,22 +9,12 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route
-            path="/"
-            render={routerProps => {
-              return <Home routerProps={routerProps} />;
-            }}
-            exact
-          />
-          {/* just component <Home /> */}
+          <Route path="/" component={Home} exact />
+
           <Route path="/upload" component={Upload} />
-          <Route
-            path="/video/:id"
-            render={routerProps => {
-              return <Home routerProps={routerProps} />;
-            }}
-          />
-          {/* just component <Home /> */}
+          
+          <Route path="/video/:id" component={Home} />
+          
         </Switch>
       </Router>
     );

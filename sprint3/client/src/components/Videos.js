@@ -2,14 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Videos({ videoData }) {
+  // preloading check
   if (videoData === undefined) {
     return <h3 className="video__loading"> Loading Videos...</h3>;
   } else {
-    let mappedVideos = videoData.filter((vid, index) => {
-        if (index !== 0) {
-          return vid;
-        }
-      }).map((vid, index) => {
+    let mappedVideos = videoData.map((vid, index) => {
         return (
           <Link
             className="video__data--link"
@@ -27,6 +24,7 @@ export default function Videos({ videoData }) {
                   />
                 </div>
 
+          {/* title and channel container */}
                 <div className="video__data-info">
                   <h4 className="video__data-title"> {vid.title}</h4>
                   <h4 className="video__data-channel"> {vid.channel} </h4>
