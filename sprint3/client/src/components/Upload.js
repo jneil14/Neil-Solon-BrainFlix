@@ -9,6 +9,7 @@ class Upload extends Component {
   };
 
   componentDidMount() {
+  // proxy does not work well with the address for this get request, so used this address format instead
     axios.get("http://localhost:5000/api/videos").then(res => {
       this.setState({
         videos: res.data
@@ -111,7 +112,7 @@ class Upload extends Component {
 
           {/* Publish and Cancel options container */}
           <div className="upload__options">
-            <button className="upload__options-publish">PUBLISH</button>
+            <button type="submit" className="upload__options-publish">PUBLISH</button>
 
             <button className="upload__options-cancel">
               CANCEL

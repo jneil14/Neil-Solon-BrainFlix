@@ -69,11 +69,8 @@ class Home extends Component {
           <div className="video__info-holder">
             <VideoInfo mainVideo={this.state.mainVideo} />
             <UserInput />
-            {!this.state.loading ? (
-              <Comments comments={this.state.mainVideo.comments} />
-            ) : (
-              <p>Fishing for comments</p>
-            )}
+            {!this.state.loading ? ( <Comments comments={this.state.mainVideo.comments} />) : 
+            ( <p>Fishing for comments</p> )}
           </div>
           <div className="next__videos-holder">
             <Videos videoData={this.state.sideVideos} />

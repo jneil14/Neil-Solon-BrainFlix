@@ -26,8 +26,7 @@ router.get('/', (req, res) => {
 })
 
 
-
-// Getting video by id
+// Get video by id
 router.get('/:id', (req, res) => {
     const match = videos.some(video => video.id === req.params.id);
     if(match) {
